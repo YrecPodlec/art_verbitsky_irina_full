@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid var(--interior-border);
+  background: linear-gradient(145deg, #16433244, #0a2b2200);
+
+  &:last-child { border-color: #9d8b46; }
+}
+.top { display: flex; justify-content: space-between; align-items: center; gap: 10px; color: #c4b574; font-size: 10px; letter-spacing: .13em; margin-bottom: 32px; }
+.top span:first-child { font-size: 13px; }
+.card h3 { font-family: var(--interior-serif); font-size: 40px; font-weight: 400; }
+.intro { font-size: 16px; line-height: 1.5; color: var(--interior-soft); min-height: 72px; margin-top: 20px; }
+.tabs { display: flex; margin: 28px 0 24px; border-bottom: 1px solid var(--interior-border); }
+.tabs button { flex: 1; padding: 12px 4px; color: var(--interior-muted); background: transparent; border: 0; border-bottom: 2px solid transparent; font: inherit; font-size: 12px; cursor: pointer; }
+.tabs button[aria-pressed="true"] { color: var(--interior-gold); border-color: var(--interior-gold); }
+.tabs button:focus-visible { outline: 2px solid var(--interior-gold); outline-offset: 2px; }
+.card ul { list-style: none; padding: 0; min-height: 132px; }
+.card li { color: #d8decb; font-size: 14px; line-height: 1.5; padding: 8px 0 8px 18px; position: relative; }
+.card li:before { content: '·'; position: absolute; left: 0; color: var(--interior-gold); }
+.difference { color: var(--interior-muted); font-size: 12px; line-height: 1.6; min-height: 58px; margin-top: 10px; }
+.price { display: flex; flex-direction: column; gap: 7px; padding-top: 23px; margin-top: 20px; border-top: 1px solid var(--interior-border); }
+.price strong { font-size: 21px; font-weight: 400; }
+.price span { color: var(--interior-muted); font-size: 12px; }
+.link { display: flex; justify-content: space-between; gap: 20px; padding: 14px 17px; margin-top: 23px; border: 1px solid #8e824b; color: #e7d293; text-decoration: none; transition: background .2s, color .2s; }
+.link:hover { background: #c8b16c; color: #061f19; }
+.remote { font-size: 11px; line-height: 1.6; color: var(--interior-muted); margin-top: 20px; }
+
+@media (max-width: 700px) {
+  .card { padding: 26px; }
+  .intro, .card ul, .difference { min-height: 0; }
+}

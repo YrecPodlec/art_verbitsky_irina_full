@@ -1,3 +1,332 @@
 {
-
+  "home": {
+    "metaTitle": "Irina Verbitsky | Artist",
+    "metaDescription": "The website of artist Irina Verbitsky",
+    "logoAlt": "Irina Verbitsky logo",
+    "photoAlt": "Portrait of Irina Verbitsky",
+    "surname": "VERBITSKY",
+    "givenName": "IRINA",
+    "aboutPlaceholder": "SOME TEXT",
+    "cards": {
+      "interior": "Interior design",
+      "art": "Art",
+      "about": "About Irina"
+    }
+  },
+  "interior": {
+    "meta": {
+      "title": "Interior Design | Irina Verbitsky",
+      "description": "Thoughtful interiors shaped around the way you live."
+    },
+    "common": {
+      "skipLink": "Skip to content"
+    },
+    "header": {
+      "brandLabel": "Irina Verbitsky — interior home",
+      "brandName": "IRINA VERBITSKY",
+      "brandCaption": "INTERIOR DESIGN",
+      "mainNavigation": "Main navigation",
+      "mobileNavigation": "Mobile navigation",
+      "openMenu": "Open menu",
+      "projects": "Projects",
+      "services": "Services",
+      "approach": "Approach",
+      "contacts": "Contact",
+      "contactCta": "Discuss a project",
+      "languageLabel": "Choose language"
+    },
+    "hero": {
+      "imageAlt": "Biophilic interior with stone, wood and evening light",
+      "eyebrow": "NATURE. ARCHITECTURE. YOU.",
+      "titleLine1": "A space",
+      "titleLine2": "you want",
+      "titleAccent": "to live in.",
+      "description": "Personal interiors where the beauty of nature meets your character and the way you live.",
+      "signature": "IRINA VERBITSKY / INTERIOR DESIGNER",
+      "noteLine1": "A LIVING SPACE.",
+      "noteLine2": "YOUR NEW STORY.",
+      "paths": {
+        "projects": {
+          "eyebrow": "BE INSPIRED",
+          "title": "View projects"
+        },
+        "services": {
+          "eyebrow": "MAKE IT YOURS",
+          "title": "Explore services"
+        },
+        "contacts": {
+          "eyebrow": "START A CONVERSATION",
+          "title": "Contact Irina"
+        }
+      }
+    },
+    "projects": {
+      "label": "FEATURED PROJECTS",
+      "number": "01 / PORTFOLIO",
+      "headingLine1": "Every space has",
+      "headingAccent": "its own character.",
+      "intro": "Different cities. Different stories. The same attention to how you want to live.",
+      "bottom": "From a first impression to your own story.",
+      "servicesLink": "Explore our services",
+      "cardLinkLabel": "{name} — discuss a similar project",
+      "demoLabel": "DEMO PROJECT",
+      "demoShort": "Demo",
+      "cards": {
+        "miami": {
+          "name": "Miami",
+          "location": "USA · MIAMI",
+          "kind": "Private home",
+          "theme": "Nature within the space"
+        },
+        "dubai": {
+          "name": "Dubai",
+          "location": "UAE · DUBAI",
+          "kind": "Apartment",
+          "theme": "Light, texture and geometry"
+        },
+        "los-angeles": {
+          "name": "Los Angeles",
+          "location": "USA · LOS ANGELES",
+          "kind": "Private home",
+          "theme": "The warm side of architecture"
+        }
+      }
+    },
+    "services": {
+      "label": "SERVICES AND PRICING",
+      "number": "02 / YOUR SCOPE",
+      "headingLine1": "From a first sketch",
+      "headingAccent": "to a whole world.",
+      "intro": "Choose how deeply to explore your idea. We will help find what your space needs.",
+      "fineprint": "Prices per m² and final package contents are agreed individually. This is a preliminary outline.",
+      "variantLabel": "{name} package option",
+      "priceAgreement": "By agreement",
+      "priceUnit": "price in €/m²",
+      "discussPackage": "Discuss this package",
+      "remote": "Remote work is available. Visits and on-site support are agreed separately.",
+      "therapy": {
+        "eyebrow": "A PERSONAL APPROACH",
+        "headingLine1": "An interior that",
+        "headingLine2": "starts",
+        "headingAccent": "with you.",
+        "description": "Therapeutic design pays closer attention to your needs, habits and feelings. Light, materials and daily routines come together in a personal space of comfort.",
+        "disclaimer": "No medical benefit is claimed.",
+        "link": "Discuss the approach"
+      },
+      "cards": {
+        "essential": {
+          "name": "Essential",
+          "tag": "THE FOUNDATION",
+          "intro": "Explore the possibilities of your space and set a direction.",
+          "variants": {
+            "base": {
+              "name": "Essential",
+              "items": {
+                "one": "Introduction and brief",
+                "two": "Initial concept",
+                "three": "Planning direction"
+              },
+              "difference": "An initial exploration of the idea."
+            },
+            "plus": {
+              "name": "Essential Plus",
+              "items": {
+                "one": "Everything in Essential",
+                "two": "Wall elevations",
+                "three": "More detail for review"
+              },
+              "difference": "Adds wall elevations to the essential scope."
+            }
+          }
+        },
+        "standard": {
+          "name": "Standard",
+          "tag": "THE IDEA IN DETAIL",
+          "intro": "Shape a cohesive vision for your future interior.",
+          "variants": {
+            "base": {
+              "name": "Standard",
+              "items": {
+                "one": "Concept development",
+                "two": "Visual review of decisions",
+                "three": "Agreed working materials"
+              },
+              "difference": "A deeper study of the chosen direction."
+            },
+            "plus": {
+              "name": "Standard Plus",
+              "items": {
+                "one": "Everything in Standard",
+                "two": "Expanded design detail",
+                "three": "Deliverables tailored to the project"
+              },
+              "difference": "An expanded scope of documentation by agreement."
+            }
+          }
+        },
+        "premium": {
+          "name": "Premium",
+          "tag": "A COMPLETE SPACE",
+          "intro": "Consider your interior as one connected story of daily life.",
+          "variants": {
+            "base": {
+              "name": "Premium",
+              "items": {
+                "one": "Space planning",
+                "two": "Complete interior concept",
+                "three": "Agreed documentation"
+              },
+              "difference": "Planning and concept are developed as one system."
+            },
+            "plus": {
+              "name": "Premium Plus",
+              "items": {
+                "one": "Everything in Premium",
+                "two": "3D interior visualisation",
+                "three": "A basis for therapeutic design"
+              },
+              "difference": "Adds 3D visualisation to Premium."
+            }
+          }
+        }
+      }
+    },
+    "process": {
+      "label": "THE PROCESS",
+      "number": "03 / FROM IDEA TO SPACE",
+      "headingLine1": "Considered.",
+      "headingLine2": "Discussed.",
+      "headingAccent": "Realised.",
+      "intro": "You know what is happening at every step, and what comes next.",
+      "contactLink": "Discuss your project",
+      "workLabel": "WHAT WE DO",
+      "resultLabel": "WHAT YOU RECEIVE",
+      "fineprint": "The scope of each step depends on the package. Visits, supervision and sourcing are agreed separately.",
+      "steps": {
+        "sketch": {
+          "title": "Initial design",
+          "work": "We discuss your goals, gather information and prepare a design brief.",
+          "result": "An initial design booklet, measured plan and furniture layout."
+        },
+        "visual": {
+          "title": "Visual review",
+          "work": "We review materials, colours, lighting and the atmosphere of the space.",
+          "result": "Moodboards or 3D visuals, depending on the chosen package."
+        },
+        "drawings": {
+          "title": "Drawings and documents",
+          "work": "We turn approved decisions into materials for implementation.",
+          "result": "Drawings and wall elevations within the agreed scope."
+        },
+        "supervision": {
+          "title": "Design supervision",
+          "work": "We agree on a suitable format for support during implementation.",
+          "result": "Feedback on implementation within the agreed scope."
+        },
+        "sourcing": {
+          "title": "Sourcing",
+          "work": "We select furniture, materials, textiles and other elements.",
+          "result": "A selection and specifications within the agreed scope."
+        }
+      }
+    },
+    "about": {
+      "label": "IRINA AND HER APPROACH",
+      "number": "04 / PEOPLE AT THE CENTRE",
+      "portraitAlt": "Irina Verbitsky",
+      "portraitLine1": "IRINA",
+      "portraitLine2": "VERBITSKY",
+      "portraitCaption": "INTERIOR DESIGNER",
+      "eyebrow": "A PLEASURE TO MEET YOU. I AM IRINA.",
+      "headingLine1": "Beauty is",
+      "headingLine2": "how a space",
+      "headingAccent": "makes you feel.",
+      "paragraph1": "I love spaces where people can be themselves. Where materials invite touch, light changes with the day and every object finds its place.",
+      "paragraph2": "I bring aesthetics together with attention to daily life: your rituals, favourite activities and what helps you feel at home.",
+      "principles": {
+        "nature": {
+          "title": "Closer to nature",
+          "description": "Living plants, natural textures and a connection to the landscape."
+        },
+        "clarity": {
+          "title": "More clarity",
+          "description": "Clear planning, comfortable light and easy movement."
+        },
+        "personal": {
+          "title": "Made for you",
+          "description": "Decisions shaped by your needs and the way you live."
+        }
+      }
+    },
+    "showroom": {
+      "label": "3D SHOWROOM",
+      "number": "05 / EXPLORE THE IDEA",
+      "eyebrow": "FROM INSPIRATION TO CHOICE",
+      "headingLine1": "Imagine.",
+      "headingLine2": "Combine.",
+      "headingAccent": "Feel.",
+      "description": "Explore ideas for your space. The interactive showroom will appear here after it is moved from the prototype.",
+      "contactLink": "Discuss an idea"
+    },
+    "contact": {
+      "label": "LET US START YOUR STORY",
+      "number": "06 / CONTACT",
+      "headingLine1": "What will",
+      "headingAccent": "your place be?",
+      "description": "Tell me about the space you imagine, even if it is only a feeling so far.",
+      "meetingLabel": "HOW WE CAN MEET",
+      "meetingValue": "Messages or a video call",
+      "locationLabel": "PROJECT LOCATION",
+      "locationValue": "Tell me your city and we will discuss the format"
+    },
+    "contactForm": {
+      "previewCaption": "CONFIRMATION PREVIEW",
+      "previewTitle": "The first step towards your space.",
+      "previewDescription": "This is a prototype: your request was not sent. On the live site, Irina will receive your brief and reply using your contact details.",
+      "backToForm": "Back to the form",
+      "caption": "TELL ME ABOUT YOUR PROJECT",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@example.com",
+      "locationLabel": "Country and city",
+      "locationPlaceholder": "Where is your property?",
+      "areaLabel": "Area, m²",
+      "areaPlaceholder": "Approximate area",
+      "typeLabel": "Type of space",
+      "types": {
+        "apartment": "Apartment",
+        "house": "House",
+        "commercial": "Commercial space",
+        "other": "Other"
+      },
+      "serviceLabel": "Service",
+      "serviceOptions": {
+        "unsure": "Help me choose",
+        "essential": "Essential",
+        "standard": "Standard",
+        "premium": "Premium",
+        "therapeutic": "Therapeutic design"
+      },
+      "messageLabel": "What do you imagine?",
+      "messagePlaceholder": "A few words about your space and ideas",
+      "videoLabel": "I would like to start with a video call",
+      "notice": "Demo form. Your data is neither sent nor saved.",
+      "submit": "Preview request"
+    },
+    "footer": {
+      "taglineLine1": "Nature. Architecture.",
+      "taglineLine2": "Your way of living.",
+      "sectionsLabel": "Sections",
+      "projects": "Projects",
+      "services": "Services",
+      "approach": "Approach",
+      "contactLine1": "Let us make",
+      "contactLine2": "something yours.",
+      "brandName": "IRINA VERBITSKY",
+      "brandCaption": "INTERIOR DESIGN",
+      "legalPlaceholder": "Contact and legal information will be added after approval.",
+      "backToTop": "Back to top"
+    }
+  }
 }
