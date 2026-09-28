@@ -5,12 +5,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
 }
 body {
-    background-color: #191919;
+    background-color: black;
     color: white;
+}
+
+@font-face {
+    font-family: 'InteriorMain';
+    src: url('./fonts/interior/voguersansfree.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InteriorSecond';
+    src: url('./fonts/interior/fractal.otf') format('opentype');
 }
