@@ -11,7 +11,8 @@
   gap: 1.5rem;
   padding: 1.5rem var(--header-gutter);
   box-shadow: inset 0 -1px 0 rgba(239, 191, 4, .32);
-  background: #082b22;
+  background: rgb(8 43 34 / 0.7);
+  backdrop-filter: blur(8px);
   color: #f4f1e8;
   font-family: 'InteriorSecond', Arial, sans-serif;
   transition: padding var(--motion-standard) var(--motion-ease);
