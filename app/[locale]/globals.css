@@ -12,18 +12,89 @@ a{
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--site-header-offset) + 1.5rem);
+}
+:root {
+    /* Палитра макета: общие цвета переиспользуются через var(), а не копируются в компоненты. */
+    --color-forest: #082b22;
+    --color-forest-deep: #061e18;
+    --color-green: #296d48;
+    --color-gold: #efbf04;
+    --color-paper: #f4f1e8;
+    --color-text-soft: #dfdfd1;
+    --color-text-muted: #b9baa0;
+    --color-text-secondary: #bac5b5;
+    --color-text-subtle: #94a792;
+    --color-text-location: #b0b99f;
+    --color-section-caption: #c5b880;
+    --color-accent-soft: #cfbd7c;
+    --color-accent-muted: #b59b4a;
+    --color-card-surface: #0b3026;
+    --color-card-hover: #123b2d;
+    --color-section-muted: #08271f;
+    --color-surface-deep: #061f19;
+    --color-form-surface: #0c3227;
+    --color-footer: #041912;
+    --color-border: rgba(210, 185, 104, .24);
+    --color-line: rgba(239, 191, 4, .32);
+    --color-hover-green: rgba(41, 109, 72, .18);
+    --font-display: 'InteriorMain', Georgia, serif;
+    --font-body: 'InteriorSecond', Arial, sans-serif;
+    --page-gutter: clamp(1.5rem, 5.2vw, 6.25rem);
+    /* Начальный отступ уточняется по реальной высоте шапки через ResizeObserver. */
+    --site-header-offset: 6.5rem;
+    --motion-fast: 180ms;
+    --motion-standard: 280ms;
+    --motion-slow: 420ms;
+    --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+/* Общий ритм движения; размеры и transform анимируются только там, где это нужно компоненту. */
+a,
+button {
+    transition: color var(--motion-fast) var(--motion-ease),
+        background-color var(--motion-fast) var(--motion-ease),
+        border-color var(--motion-fast) var(--motion-ease);
+}
+a:focus-visible,
+button:focus-visible {
+    outline: 0.25rem solid var(--color-gold);
+    outline-offset: 0.25rem;
 }
 body {
     background-color: black;
     color: white;
+    padding-top: var(--site-header-offset);
 }
 
 @font-face {
     font-family: 'InteriorMain';
     src: url('./fonts/interior/voguersansfree.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
-
 @font-face {
     font-family: 'InteriorSecond';
     src: url('./fonts/interior/fractal.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@media (max-width: 72rem) {
+    :root { --site-header-offset: 5.5rem; }
+}
+@media (max-width: 32.5rem) {
+    :root { --site-header-offset: 4.75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --motion-fast: 0.01ms;
+        --motion-standard: 0.01ms;
+        --motion-slow: 0.01ms;
+    }
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

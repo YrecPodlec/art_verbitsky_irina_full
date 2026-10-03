@@ -1,0 +1,23 @@
+.item {
+  border-bottom: .0625rem solid var(--color-border);
+  &:first-child { border-top: .0625rem solid var(--color-border); }
+  summary { display: flex; align-items: center; gap: 1.25rem; padding: 1.75rem 0; cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary:focus-visible { outline: .25rem solid var(--color-gold); outline-offset: .25rem; }
+  summary h3 { font: 400 1.75rem/1.2 var(--font-display); }
+  &[open] .toggle { transform: rotate(45deg); }
+}
+.index { font-size: .75rem; color: var(--color-accent-soft); align-self: flex-start; margin-top: .5rem; }
+.toggle { margin-left: auto; color: var(--color-accent-muted); font: 1.5rem/1 Arial, sans-serif; transition: transform var(--motion-standard) var(--motion-ease); }
+.content { padding: 0 0 1.75rem 2.5rem; }
+// В поддерживающих браузерах раскрытие плавное; в остальных остаётся обычный рабочий details.
+@supports (interpolate-size: allow-keywords) {
+  .item {
+    interpolate-size: allow-keywords;
+    &::details-content { block-size: 0; opacity: 0; overflow: clip; transition: block-size var(--motion-standard) var(--motion-ease), opacity var(--motion-standard) var(--motion-ease), content-visibility var(--motion-standard) allow-discrete; }
+    &[open]::details-content { block-size: auto; opacity: 1; }
+  }
+}
+@media (max-width: 62.5rem) { .item summary { gap: .75rem; } .item summary h3 { font-size: 1.5rem; } .content { padding-left: 1.75rem; } }
+@media (max-width: 50rem) { .item summary h3 { font-size: 1.75rem; } }
+@media (max-width: 32.5rem) { .item summary { padding-block: 1.5rem; } .item summary h3 { font-size: 1.5rem; } }

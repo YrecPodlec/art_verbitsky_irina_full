@@ -1,0 +1,238 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: .0625rem solid var(--color-border);
+  background-color: var(--color-card-surface);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  transition: border-color var(--motion-standard) var(--motion-ease),
+    background-color var(--motion-standard) var(--motion-ease),
+    transform var(--motion-standard) var(--motion-ease);
+
+  // Уголки и тонкие линии повторяют декоративную рамку макета.
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: .0625rem solid var(--color-accent-muted);
+    opacity: .65;
+    pointer-events: none;
+  }
+
+  &::before {
+    top: -.0625rem;
+    left: -.0625rem;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  &::after {
+    right: -.0625rem;
+    bottom: -.0625rem;
+    border-top: 0;
+    border-left: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--color-accent-muted);
+    background-color: var(--color-card-hover);
+    transform: translateY(-.25rem);
+  }
+
+  &:hover .arrow,
+  &:focus-within .arrow {
+    transform: translate(.25rem, -.25rem);
+  }
+}
+
+.imageWrap {
+  position: relative;
+  padding: .75rem .75rem 0;
+}
+
+.cover {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.14;
+  overflow: hidden;
+  background-color: var(--color-forest-deep);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, #001b1944, transparent 55%);
+    pointer-events: none;
+  }
+
+  &:hover .image,
+  &:focus-visible .image {
+    transform: scale(1.045);
+  }
+}
+
+.image {
+  object-fit: cover;
+  transition: transform var(--motion-slow) var(--motion-ease);
+}
+
+.center { object-position: 50% 50%; }
+.right { object-position: 70% 50%; }
+.farRight { object-position: 98% 50%; }
+
+.index {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+  padding-bottom: .5rem;
+  border-bottom: .0625rem solid #ffffff60;
+  color: var(--color-paper);
+  font-size: .75rem;
+  letter-spacing: .1em;
+}
+
+.demo {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  color: var(--color-paper);
+  font-size: .5rem;
+  letter-spacing: .1em;
+  text-shadow: 0 .0625rem .25rem #000;
+}
+
+.favorite {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 3;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: inherit;
+  transition: padding var(--motion-standard) var(--motion-ease);
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  color: var(--color-text-location);
+  font-size: .75rem;
+  line-height: 1.5;
+  letter-spacing: .14em;
+}
+
+.locationDivider {
+  width: 1rem;
+  height: .0625rem;
+  flex: none;
+  background-color: var(--color-accent-muted);
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.title {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+  transition: font-size var(--motion-standard) var(--motion-ease);
+}
+
+.arrow {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+  color: var(--color-accent-soft);
+  transition: transform var(--motion-standard) var(--motion-ease);
+}
+
+.description {
+  min-height: 2.75rem;
+  margin-top: .75rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: .0625rem solid var(--color-border);
+  color: var(--color-text-subtle);
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.story {
+  color: var(--color-accent-soft);
+}
+
+@media (min-width: 106.25rem) {
+  .cover { aspect-ratio: 1.25; }
+}
+
+@media (max-width: 75rem) {
+  .content { padding: 1.25rem; }
+  .title { font-size: 1.75rem; }
+}
+
+@media (max-width: 62.5rem) {
+  .description { font-size: .75rem; }
+  .story { display: none; }
+}
+
+@media (max-width: 50rem) {
+  // Плотный вариант сохраняет три карточки в планшетной подборке, как в макете.
+  .compact {
+    .content { padding: 1rem; }
+    .title { font-size: 1.5rem; }
+    .location { gap: .25rem; font-size: .5rem; letter-spacing: .02em; }
+    .locationDivider { width: .5rem; }
+    .description { min-height: 3.5rem; }
+    .arrow { width: 1.25rem; height: 1.25rem; }
+    .favorite { top: 1rem; right: 1rem; --favorite-control-size: 1.75rem; --favorite-icon-size: 1.25rem; }
+    .index, .demo { left: .75rem; }
+  }
+}
+
+@media (max-width: 32.5rem) {
+  .cover { aspect-ratio: 1.17; }
+  .content, .compact .content { padding: 1.5rem; }
+  .title, .compact .title { font-size: 2.25rem; }
+  .location, .compact .location { gap: .5rem; font-size: .75rem; letter-spacing: .11em; }
+  .locationDivider, .compact .locationDivider { width: 1rem; }
+  .description, .compact .description { min-height: 0; font-size: 1rem; }
+  .arrow, .compact .arrow { width: 1.75rem; height: 1.75rem; }
+  .favorite, .compact .favorite { top: 1.5rem; right: 1.5rem; --favorite-control-size: 2.25rem; --favorite-icon-size: 1.5rem; }
+  .story { display: inline; }
+}

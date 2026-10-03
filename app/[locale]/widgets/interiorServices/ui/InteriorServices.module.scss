@@ -1,0 +1,30 @@
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.therapy { display: grid; grid-template-columns: .65fr 2fr 1.05fr; gap: 2.25rem; align-items: center; border: .0625rem solid #9d8845; padding: 2.75rem; margin-top: 3rem; background: radial-gradient(ellipse at 0 50%, #296d482b, transparent 60%); }
+.symbol { width: 7.25rem; height: 10.5rem; border: .0625rem solid #a99145; border-radius: 4rem 4rem 0 0; display: grid; place-items: center; position: relative; margin-inline: auto; font-size: 3.5rem; color: #c8b064; }
+.symbol::before { content: ''; position: absolute; inset: .5rem; border: .0625rem solid #a9914544; border-radius: 3.5rem 3.5rem 0 0; }
+.copy {
+  h3 { font: 400 2.75rem/1.17 var(--font-display); margin: 1rem 0 1.25rem; }
+  em { color: var(--color-accent-soft); font-style: normal; }
+  > p:nth-of-type(2) { color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6; max-width: 34.5rem; }
+}
+.therapyAction { display: flex; flex-direction: column; gap: 1.75rem; min-width: 0; > p { font-size: 1rem; line-height: 1.5; color: #d2d7c7; } > a { gap: 1rem; font-size: .75rem; } }
+.consultations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; align-items: baseline; margin-top: 2.25rem; padding-top: 2rem; border-top: .0625rem solid var(--color-border); font-size: 1rem; > p { color: var(--color-text-secondary); } > a { gap: 1.25rem; } }
+@media (max-width: 75rem) {
+  .grid { gap: 1.25rem; }
+  .therapy { padding: 2rem; gap: 1.5rem; grid-template-columns: .5fr 1.8fr 1fr; }
+  .symbol { width: 6rem; height: 9rem; }
+  .copy h3 { font-size: 2.25rem; }
+}
+@media (max-width: 62.5rem) { .therapy { grid-template-columns: 7rem 1fr; } .therapyAction { grid-column: 2; flex-direction: row; align-items: center; } }
+@media (max-width: 50rem) {
+  .grid { grid-template-columns: 1fr; }
+  .therapy { padding: 1.75rem; grid-template-columns: 5.5rem 1fr; }
+  .symbol { width: 5rem; height: 8rem; }
+  .therapyAction { grid-column: 1 / -1; justify-content: space-between; }
+  .consultations { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+@media (max-width: 32.5rem) {
+  .therapy { display: block; padding: 1.75rem 1.5rem; }
+  .symbol { margin: 0 0 2rem; width: 4rem; height: 6rem; font-size: 2.25rem; }
+  .therapyAction { margin-top: 1.5rem; flex-direction: column; align-items: stretch; gap: 1.25rem; }
+}

@@ -1,0 +1,52 @@
+.root {
+  max-width: 100%;
+  color: var(--color-text-soft);
+  font-family: var(--font-body);
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  min-width: 0;
+}
+
+.link,
+.current {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: .25rem .5rem;
+  overflow-wrap: anywhere;
+}
+
+.link {
+  color: inherit;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--color-hover-green);
+    color: var(--color-gold);
+  }
+}
+
+.current {
+  color: var(--color-gold);
+}
+
+.separator {
+  flex: none;
+  color: var(--color-text-muted);
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}

@@ -1,0 +1,43 @@
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 0;
+  color: #f4f1e8;
+  white-space: nowrap;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: .25rem;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #efbf04;
+  transition: width var(--motion-standard) var(--motion-ease);
+}
+
+.link:hover::after,
+.link:focus-visible::after,
+.link[aria-current='page']::after {
+  width: 100%;
+}
+
+.link[aria-current='page'],
+.accented {
+  color: #e5d399;
+}
+
+.mobile {
+  display: flex;
+  width: 100%;
+  min-height: 3rem;
+  padding: .75rem 0;
+  font-size: 1rem;
+}
+
+.mobile::after {
+  bottom: .5rem;
+}

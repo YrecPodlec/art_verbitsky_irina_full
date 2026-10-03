@@ -1,0 +1,26 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  color: #c4cbb8;
+  font: .75rem/1.5 var(--font-body);
+  input, select, textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 2.75rem;
+    padding: .75rem 0;
+    border: 0;
+    border-bottom: .0625rem solid #49624d;
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-paper);
+    font: 1rem/1.5 var(--font-body);
+    transition: border-color var(--motion-fast) var(--motion-ease);
+    &:focus-visible { outline: .25rem solid var(--color-gold); outline-offset: .25rem; }
+  }
+  input::placeholder, textarea::placeholder { color: #8da18c; opacity: 1; }
+  select { cursor: pointer; }
+  option { background: var(--color-card-surface); color: var(--color-paper); }
+  textarea { resize: vertical; min-height: 5rem; }
+}

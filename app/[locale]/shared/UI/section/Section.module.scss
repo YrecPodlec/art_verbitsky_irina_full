@@ -1,0 +1,64 @@
+.section {
+  padding: 5.5rem var(--page-gutter);
+  border-top: .0625rem solid var(--color-border);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  transition: padding var(--motion-standard) var(--motion-ease);
+}
+.forest { background: var(--color-forest); }
+.deep { background: var(--color-surface-deep); }
+.surface { background: var(--color-card-surface); }
+.muted { background: var(--color-section-muted); }
+.topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: var(--color-section-caption);
+  font-family: var(--font-body);
+  font-size: .75rem;
+  line-height: 1.6;
+  letter-spacing: .14em;
+  > span:first-child { display: flex; align-items: center; gap: .75rem; }
+  > span:last-child { text-align: right; }
+}
+.title {
+  min-width: 0;
+  font: 400 clamp(2.5rem, 4.1vw, 4rem)/1.12 var(--font-display);
+  letter-spacing: -.02em;
+  overflow-wrap: break-word;
+  transition: font-size var(--motion-standard) var(--motion-ease);
+  em { color: var(--color-accent-soft); font-style: normal; }
+}
+.heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2.75rem;
+  margin: 2.5rem 0 2.75rem;
+}
+.intro {
+  flex: none;
+  max-width: 20rem;
+  p { color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6; }
+}
+.eyebrow { color: var(--color-section-caption); font: .75rem/1.6 var(--font-body); letter-spacing: .14em; }
+.fineprint { margin-top: 1.5rem; color: var(--color-text-subtle); font: .75rem/1.65 var(--font-body); }
+@media (min-width: 106.25rem) { .section { padding-block: 7rem; } }
+@media (max-width: 75rem) { .section { padding-block: 4.5rem; } }
+@media (max-width: 62.5rem) { .heading .title { font-size: 2.75rem; } }
+@media (max-width: 50rem) {
+  .section { padding-block: 3.5rem; }
+  .topline { font-size: .5rem; }
+  .heading { gap: 1.5rem; margin-block: 2rem; }
+  .heading .title { font-size: 2.5rem; }
+  .intro { max-width: 15rem; }
+}
+@media (max-width: 32.5rem) {
+  .section { padding-block: 2.75rem; }
+  .topline { letter-spacing: .07em; }
+  .topline > span:last-child { max-width: 44%; }
+  .heading { flex-direction: column; align-items: flex-start; }
+  .title, .heading .title { font-size: 2.5rem; line-height: 1.17; }
+  .intro { max-width: none; }
+}

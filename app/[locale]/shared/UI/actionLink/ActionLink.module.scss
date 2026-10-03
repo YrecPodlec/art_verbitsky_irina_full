@@ -1,0 +1,162 @@
+.link {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  &:disabled { cursor: not-allowed; opacity: .5; }
+  transition: color var(--motion-fast) var(--motion-ease),
+    font-size var(--motion-standard) var(--motion-ease),
+    padding var(--motion-standard) var(--motion-ease);
+
+  // Прозрачный зелёный слой плавно появляется поверх любого варианта ссылки.
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--color-hover-green);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--motion-standard) var(--motion-ease);
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    opacity: 1;
+  }
+
+  &:hover .arrow,
+  &:focus-visible .arrow {
+    transform: translate(.25rem, -.25rem);
+  }
+}
+
+.small {
+  min-height: 2.75rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  --arrow-size: 1.5rem;
+}
+
+.down:hover .arrow,
+.down:focus-visible .arrow {
+  transform: translateY(.25rem);
+}
+
+.large {
+  min-height: 3.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  --arrow-size: 1.75rem;
+}
+
+.copy {
+  min-width: 0;
+}
+
+.caption {
+  display: block;
+  margin-bottom: .5rem;
+  color: var(--color-text-muted);
+  font-size: .75rem;
+  line-height: 1.6;
+  letter-spacing: .17em;
+}
+
+.label {
+  display: block;
+  line-height: 1.4;
+}
+
+.arrow {
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  flex: none;
+  margin-left: auto;
+  transition: transform var(--motion-standard) var(--motion-ease),
+    width var(--motion-standard) var(--motion-ease),
+    height var(--motion-standard) var(--motion-ease);
+}
+
+// Тонкие декоративные линии сохранены из макета; размеры и отступы идут с шагом .25rem.
+.text {
+  padding-inline: 0;
+  border-bottom: .0625rem solid var(--color-line);
+}
+
+.outline {
+  border: .0625rem solid var(--color-line);
+  color: var(--color-gold);
+}
+
+.gold {
+  background-color: var(--color-gold);
+  color: var(--color-forest-deep);
+}
+
+.green {
+  background-color: var(--color-green);
+}
+
+.path {
+  width: 100%;
+  height: 100%;
+  gap: 1.25rem;
+  padding: .5rem 1.75rem;
+
+  .arrow {
+    color: var(--color-gold);
+  }
+}
+
+.index {
+  flex: none;
+  align-self: flex-start;
+  padding-top: .25rem;
+  color: #ccb974;
+  font-size: .75rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 72rem) {
+  .path {
+    gap: .75rem;
+    padding-inline: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .path {
+    padding: 1rem 0;
+    gap: 1.25rem;
+    font-size: 1.25rem;
+    --arrow-size: 1.5rem;
+
+    .caption {
+      display: none;
+    }
+
+    .index {
+      align-self: center;
+      padding-top: 0;
+    }
+  }
+}
+
+@media (max-width: 32.5rem) {
+  .path {
+    font-size: 1rem;
+  }
+}

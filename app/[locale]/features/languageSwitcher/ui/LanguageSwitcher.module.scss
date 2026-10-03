@@ -1,0 +1,88 @@
+.root {
+  position: relative;
+  flex: none;
+  z-index: 2;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  min-height: 2.75rem;
+  padding: .5rem 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.flag {
+  display: block;
+  width: 2rem;
+  height: 1.5rem;
+  object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, .25);
+}
+
+.chevron {
+  color: #c7b36f;
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform var(--motion-fast) var(--motion-ease);
+}
+
+.trigger[aria-expanded='true'] .chevron {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + .5rem);
+  right: 0;
+  display: grid;
+  min-width: 8rem;
+  padding: .5rem;
+  border: 1px solid rgba(239, 191, 4, .32);
+  background: #082b22;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .35);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-.5rem);
+  transition: opacity var(--motion-standard) var(--motion-ease),
+    transform var(--motion-standard) var(--motion-ease),
+    visibility 0s linear var(--motion-standard);
+}
+
+.optionsOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem;
+  color: #f4f1e8;
+  font-size: .75rem;
+  white-space: nowrap;
+}
+
+.option:hover,
+.option[aria-current='true'] {
+  background: rgba(239, 191, 4, .1);
+  color: #efbf04;
+}
+
+@media (max-width: 32.5rem) {
+  .trigger { gap: .5rem; font-size: .75rem; }
+  .flag { width: 1.5rem; height: 1.25rem; }
+  .chevron { display: none; }
+}
