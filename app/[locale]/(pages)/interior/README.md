@@ -1,5 +1,9 @@
 # Страница дизайна интерьера
 
+Карты [widgets](../../widgets/README.md), [features](../../features/README.md),
+[entities](../../entities/README.md) и [shared](../../shared/README.md) ведут к README отдельных частей.
+Разбор взаимодействия тарифов и формы — в [projectInquiry](../../features/projectInquiry/README.md).
+
 `page.tsx` собирает только `/[locale]/interior`. Источник дизайна — `maket/index.html`,
 `maket/content.js`, `maket/styles.css`, `maket/site.css` и интерактивность из `maket/app.js`.
 Другие маршруты не переносятся в рамках этой страницы.

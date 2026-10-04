@@ -15,7 +15,7 @@ export async function FeaturedProjects() {
     <Section id="projects" eyebrow={t('eyebrow')} index={t('sectionIndex')} tone="forest">
       <SectionHeading title={<SectionTitle id="projects-title">{t.rich('title', {br: () => <br />, accent: (chunks) => <em>{chunks}</em>})}</SectionTitle>}>
         <p>{t.rich('description', {br: () => <br />})}</p>
-        <ActionLink className={styles.galleryLink} href="/gallery">{t('gallery')}</ActionLink>
+        <ActionLink className={styles.galleryLink} href="/gallery" variant={'outline'}>{t('gallery')}</ActionLink>
       </SectionHeading>
 
       <div className={styles.grid}>

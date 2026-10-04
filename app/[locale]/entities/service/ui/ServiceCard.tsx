@@ -14,7 +14,7 @@ type ServiceCardProps = {
 // Только представление услуги. Выбор варианта и связь с формой принадлежат feature.
 export function ServiceCard({service, variant, labels, index, controls, action}: ServiceCardProps) {
   return (
-    <article className={`${styles.card} ${service.id === 'premium' ? styles.premium : ''}`}>
+    <article className={`${styles.card}`}>
       <div className={styles.top}><span>{String(index).padStart(2, '0')}</span><span>{service.tag}</span></div>
       <h3 className={styles.title}>{service.name}</h3>
       <p className={styles.intro}>{service.intro}</p>

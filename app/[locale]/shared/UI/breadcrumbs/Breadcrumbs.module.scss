@@ -1,8 +1,8 @@
 .root {
   max-width: 100%;
   color: var(--color-text-soft);
-  font-family: var(--font-body);
-  font-size: .75rem;
+  font-family: var(--font-body) sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -35,7 +35,7 @@
 
   &:hover,
   &:focus-visible {
-    background-color: var(--color-hover-green);
+    background-color: var(--color-hover);
     color: var(--color-gold);
   }
 }

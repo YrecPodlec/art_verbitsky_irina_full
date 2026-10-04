@@ -12,7 +12,7 @@ a{
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--site-header-offset) + 1.5rem);
+    scroll-padding-top: calc(var(--site-header-offset) - 5rem);
 }
 :root {
     /* Палитра макета: общие цвета переиспользуются через var(), а не копируются в компоненты. */
@@ -33,11 +33,12 @@ html {
     --color-card-hover: #123b2d;
     --color-section-muted: #08271f;
     --color-surface-deep: #061f19;
+    --color-surface-deeper: #02130e;
     --color-form-surface: #0c3227;
     --color-footer: #041912;
     --color-border: rgba(210, 185, 104, .24);
     --color-line: rgba(239, 191, 4, .32);
-    --color-hover-green: rgba(41, 109, 72, .18);
+    --color-hover: rgb(0 106 54);
     --font-display: 'InteriorMain', Georgia, serif;
     --font-body: 'InteriorSecond', Arial, sans-serif;
     --page-gutter: clamp(1.5rem, 5.2vw, 6.25rem);

@@ -4,7 +4,7 @@
   flex-direction: column;
   min-width: 0;
   border: .0625rem solid var(--color-border);
-  background-color: var(--color-card-surface);
+  background-color: var(--color-surface-deeper);
   color: var(--color-paper);
   font-family: var(--font-body);
   transition: border-color var(--motion-standard) var(--motion-ease),
@@ -41,7 +41,7 @@
   &:hover,
   &:focus-within {
     border-color: var(--color-accent-muted);
-    background-color: var(--color-card-hover);
+    background-color: var(--color-hover);
     transform: translateY(-.25rem);
   }
 

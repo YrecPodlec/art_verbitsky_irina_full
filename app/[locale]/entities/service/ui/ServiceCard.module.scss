@@ -2,12 +2,12 @@
   min-width: 0;
   padding: 2rem;
   border: .0625rem solid var(--color-border);
-  background: linear-gradient(145deg, #16433244, #0a2b2200);
+  //background: linear-gradient(145deg, #16433244, #0a2b2200);
+  background-color: var(--color-surface-deeper);
   display: flex;
   flex-direction: column;
   transition: padding var(--motion-standard) var(--motion-ease);
 }
-.premium { border-color: #9d8b46; background: linear-gradient(145deg, #285b3d44, #0a2b2200); }
 .top { display: flex; justify-content: space-between; align-items: center; gap: .75rem; color: var(--color-section-caption); font-size: .5rem; letter-spacing: .13em; margin-bottom: 2rem; }
 .top > span:first-child { font-size: .75rem; }
 .title { font: 400 2.5rem/1.2 var(--font-display); overflow-wrap: anywhere; }
