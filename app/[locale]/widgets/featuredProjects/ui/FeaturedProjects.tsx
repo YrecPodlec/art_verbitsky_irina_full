@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import {unstable_rethrow} from 'next/navigation';
 import {getProjects, ProjectCard} from '@/app/[locale]/entities/project';
 import {FavoriteProjectButton} from '@/app/[locale]/features/favoriteProject';
 import {ActionLink} from '@/app/[locale]/shared/UI/actionLink';
@@ -8,8 +9,15 @@ import styles from './FeaturedProjects.module.scss';
 // Серверный блок собирает данные, карточки и feature избранного.
 // Саму карточку можно использовать в галерее без копирования этой секции.
 export async function FeaturedProjects() {
-  const [t, projects] = await Promise.all([getTranslations('featuredProjects'), getProjects()]);
-  const featuredProjects = projects.filter((project) => project.featured).slice(0, 3);
+  const t = await getTranslations('featuredProjects');
+  // Фильтр и лимит выполняются в MongoDB: лишние проекты не передаются приложению.
+  // Ошибка БД отличается от пустой подборки и не подменяется демонстрационными карточками.
+  const featuredProjects = await getProjects({featured: true, limit: 3}).catch((error: unknown) => {
+    // Служебный сигнал Next о динамическом рендеринге нельзя принять за ошибку БД.
+    unstable_rethrow(error);
+    console.error('FEATURED_PROJECTS_LOAD_FAILED');
+    return null;
+  });
 
   return (
     <Section id="projects" eyebrow={t('eyebrow')} index={t('sectionIndex')} tone="forest">
@@ -18,7 +26,9 @@ export async function FeaturedProjects() {
         <ActionLink className={styles.galleryLink} href="/gallery" variant={'outline'}>{t('gallery')}</ActionLink>
       </SectionHeading>
 
-      <div className={styles.grid}>
+      {featuredProjects === null && <p role="status">{t('unavailable')}</p>}
+      {featuredProjects?.length === 0 && <p>{t('empty')}</p>}
+      {featuredProjects && featuredProjects.length > 0 && <div className={styles.grid}>
         {featuredProjects.map((project, index) => (
           <ProjectCard
             key={project.id}
@@ -29,7 +39,7 @@ export async function FeaturedProjects() {
             favoriteAction={<FavoriteProjectButton projectId={project.id} projectName={project.name} />}
           />
         ))}
-      </div>
+      </div>}
 
       <div className={styles.bottom}>
         <p>{t('closing')}</p>

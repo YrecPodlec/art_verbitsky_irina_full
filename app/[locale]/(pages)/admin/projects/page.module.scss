@@ -1,0 +1,10 @@
+.page {
+  padding: 2rem var(--page-gutter) 4rem;
+  min-height: calc(100svh - var(--site-header-offset));
+  background: var(--color-forest-deep);
+  color: var(--color-paper);
+
+  > h1 { max-width: 64rem; margin: 0 auto 1rem; font: 400 clamp(2rem, 5vw, 4rem)/1.25 var(--font-display); }
+  > p { max-width: 64rem; margin: 0 auto 2rem; font: 1rem/1.5 var(--font-body); color: var(--color-text-secondary); }
+  > form { max-width: 64rem; margin: 0 auto; }
+}

@@ -4,26 +4,37 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "check:messages": "node scripts/check-messages.mjs"
+    "check:messages": "node scripts/check-messages.mjs",
+    "test:project-classification": "node --test --test-reporter=spec \"app/*/entities/project/model/projectClassification.test.mjs\"",
+    "test:projects": "node --import tsx --test --test-reporter=spec prisma/projectValidator.test.ts \"app/*/entities/project/model/getProjectCover.test.ts\" \"app/*/entities/project/model/projectClassification.test.mjs\"",
+    "test:project-api": "node --import tsx --test --test-reporter=spec \"app/*/entities/project/model/parseProjectInput.test.ts\" \"app/*/shared/lib/api/*.test.ts\"",
+    "db:generate": "prisma generate",
+    "db:check": "tsx prisma/database.ts check",
+    "db:init": "prisma generate && tsx prisma/database.ts init"
   },
   "dependencies": {
+    "@prisma/client": "6.19",
     "next": "16.2.10",
     "next-intl": "^4.13.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "sass": "^1.101.3"
+    "sass": "^1.101.3",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^18.0.6",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "prisma": "6.19",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

@@ -1,0 +1,123 @@
+// Схема данных портфолио. Пояснения и пример заполнения — в prisma/README.md.
+// Переводы остаются в messages/*.json, изображения — в файловом хранилище.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Статус отвечает только за видимость проекта на сайте.
+enum PublicationStatus {
+  draft
+  published
+  archived
+}
+
+// Коды не переводим: отображаемые названия берём из messages.
+enum ProjectType {
+  residential
+  commercial
+}
+
+// Фиксированные категории. Сочетания проверяют projectClassification.ts и валидатор MongoDB.
+enum ProjectCategory {
+  house
+  apartment
+  hotel
+  cafe
+}
+
+enum ProjectMediaCategory {
+  visualization
+  drawing
+  concept
+  photo
+}
+
+// Вложенный объект, а не коллекция. Координаты кадрирования — проценты 0–100.
+// Если coverPosition отсутствует, интерфейс использует центр изображения.
+type ImagePosition {
+  x Float @default(50)
+  y Float @default(50)
+}
+
+// Метаданные изображения внутри проекта. Сам файл в MongoDB не сохраняем.
+type ProjectMedia {
+  // Стабильный идентификатор изображения: перестановка в галерее его не меняет.
+  id String @default(uuid())
+
+  // Ключ messages.projects.<project.contentKey>.media.<contentKey> для alt/caption.
+  contentKey String
+  category   ProjectMediaCategory
+
+  // Публичный HTTPS-адрес или путь /projects/... к файлу из public.
+  // Приватные оригиналы и временные подписанные ссылки сюда не помещаем.
+  url String
+
+  // Ключ файла у провайдера хранения; для локального файла можно не задавать.
+  storageKey String?
+
+  // Реальные размеры файла в пикселях, а не CSS-размеры компонента.
+  width     Int
+  height    Int
+  mimeType  String?
+  sizeBytes Int?
+
+  // Необязательный код комнаты, например livingRoom, kitchen или bedroom.
+  room String?
+}
+
+// Один документ = один проект. Список документов получаем через findMany().
+model Project {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  // Читаемая часть адреса: slug = miami-house -> /ru/gallery/miami-house.
+  // Это пример будущего маршрута, а не уже созданная страница.
+  slug String @unique
+
+  // Корневой ключ messages.projects.<contentKey>, например miami.
+  // По нему читаем name, summary, description и story из выбранного JSON.
+  // Описание и историю не дублируем в БД: для всех текстов достаточно одного ключа.
+  contentKey String @unique
+
+  publicationStatus PublicationStatus @default(draft)
+  type              ProjectType
+
+  // Жилое: house/apartment. Коммерческое: hotel/cafe.
+  // Enum ограничивает значения, но не их сочетания: перед записью вызываем
+  // assertProjectClassification с итоговыми type и category.
+  // Дополнительное правило самой БД устанавливает npm run db:init (не prisma generate).
+  category ProjectCategory
+
+  // Характеристики можно заполнить позже, пока проект находится в черновике.
+  countryCode String? // Код страны US/RU; название США/USA берём из messages.
+  citySlug    String? // Код города для фильтров, например miami.
+  areaM2      Float? // Площадь числом, без строки «м²».
+  year        Int?
+
+  // Редакторская подборка, не персональное избранное пользователей.
+  featured Boolean @default(false)
+
+  // Ссылается на media.id этого же проекта. Это проверяем перед сохранением.
+  coverMediaId  String?
+  // Не меняет файл: выбирает видимую область обложки при обрезке через object-fit.
+  // {x: 50, y: 50} — центр; {x: 100, y: 50} — правая сторона изображения.
+  coverPosition ImagePosition?
+  media         ProjectMedia[]
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  publishedAt DateTime?
+
+  // Индексы для списка новых проектов, подборки и фильтров типа/категории.
+  // Ручной порядок не храним; для стабильной выдачи сортируем по createdAt и id.
+  @@index([publicationStatus, createdAt(sort: Desc), id])
+  @@index([publicationStatus, featured, createdAt(sort: Desc), id])
+  @@index([publicationStatus, type, category])
+  @@map("projects")
+}

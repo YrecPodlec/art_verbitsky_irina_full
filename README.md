@@ -74,12 +74,15 @@ features, entities и shared; feature — entities и shared; entity — shared.
 
 - `ui/` — JSX-разметка и соседние `*.module.scss`.
 - `model/` — данные, типы, состояние и логика.
+- `api/` — серверные запросы к источнику данных.
 - `index.ts` — вход для импорта из папки; обычно экспортирует её основные компоненты.
 - `server.ts` — отдельный серверный вход, если его нужно отделить от клиентских импортов.
 - `README.md` — подробности конкретной части, если ей нужно отдельное объяснение.
 
 Например, у `entities/project` карточка лежит в `ui/ProjectCard.tsx`,
-исходные данные — в `model/projects.ts`, подготовка переводов — в `model/getProjects.ts`.
+формат для UI — в `model/projects.ts`, запрос MongoDB — в `api/getProjectRecords.ts`,
+подготовка переводов — в `model/getProjects.ts`. Подключение и начальное заполнение:
+[Prisma](prisma/README.md).
 
 ## Где находятся страницы
 
@@ -104,7 +107,7 @@ features, entities и shared; feature — entities и shared; entity — shared.
 | --- | --- | --- |
 | `siteHeader` — шапка | Фиксированный навбар | [SiteHeader.tsx](<app/[locale]/widgets/siteHeader/ui/SiteHeader.tsx>) |
 | `interiorHero` — первый экран | Большое приветствие, фон и три перехода | [InteriorHero.tsx](<app/[locale]/widgets/interiorHero/ui/InteriorHero.tsx>) |
-| `featuredProjects` — выбранные проекты | Второй блок с тремя карточками | [FeaturedProjects.tsx](<app/[locale]/widgets/featuredProjects/ui/FeaturedProjects.tsx>) |
+| `featuredProjects` — выбранные проекты | Второй блок с максимум тремя карточками из БД | [FeaturedProjects.tsx](<app/[locale]/widgets/featuredProjects/ui/FeaturedProjects.tsx>) |
 | `interiorServices` — услуги | Тарифы, особый подход и консультации | [InteriorServices.tsx](<app/[locale]/widgets/interiorServices/ui/InteriorServices.tsx>) |
 | `workProcess` — процесс работы | Этапы с раскрывающимися пунктами | [WorkProcess.tsx](<app/[locale]/widgets/workProcess/ui/WorkProcess.tsx>) |
 | `designerAbout` — о дизайнере | Портрет Ирины и принципы её подхода | [DesignerAbout.tsx](<app/[locale]/widgets/designerAbout/ui/DesignerAbout.tsx>) |
@@ -125,7 +128,7 @@ widget лишь собирает их в раздел.
 | Изменить переходы первого экрана | [interiorHero/model/actions.ts](<app/[locale]/widgets/interiorHero/model/actions.ts>) |
 | Заменить фотографию первого экрана | Импорт изображения в [InteriorHero.tsx](<app/[locale]/widgets/interiorHero/ui/InteriorHero.tsx>); изображения в `public/interior/` |
 | Заменить портрет | Импорт изображения в [DesignerAbout.tsx](<app/[locale]/widgets/designerAbout/ui/DesignerAbout.tsx>) |
-| Добавить проект или заменить его изображение | [project/model/projects.ts](<app/[locale]/entities/project/model/projects.ts>) и раздел `projects` в переводах |
+| Добавить проект или заменить его изображение | Документ в MongoDB и раздел `projects` в переводах; [инструкция](prisma/README.md) |
 | Изменить вид карточки проекта | [ProjectCard.tsx](<app/[locale]/entities/project/ui/ProjectCard.tsx>) и [ProjectCard.module.scss](<app/[locale]/entities/project/ui/ProjectCard.module.scss>) |
 | Доработать сердечко избранного | [FavoriteProjectButton.tsx](<app/[locale]/features/favoriteProject/ui/FavoriteProjectButton.tsx>) |
 | Изменить состав тарифов и их тексты | Раздел `services` в переводах; для изменения набора пакетов — [service/model/services.ts](<app/[locale]/entities/service/model/services.ts>) |

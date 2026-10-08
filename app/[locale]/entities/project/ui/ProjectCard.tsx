@@ -29,10 +29,17 @@ export async function ProjectCard({
 
   const cover = (
     <>
-      {/* Кадрирование выбирается SCSS-классом; изображения ниже первого экрана загружаются лениво. */}
-      <Image className={`${styles.image} ${styles[project.imagePosition]}`} src={project.image} alt={project.imageAlt} fill sizes={imageSizes} loading="lazy" />
+      {/* Числа кадрирования приходят из БД; общий внешний вид остаётся в SCSS-модуле. */}
+      <Image
+        className={styles.image}
+        style={{objectPosition: `${project.imagePosition.x}% ${project.imagePosition.y}%`}}
+        src={project.image}
+        alt={project.imageAlt}
+        fill
+        sizes={imageSizes}
+        loading="lazy"
+      />
       {index !== undefined && <span className={styles.index} aria-hidden="true">{String(index).padStart(2, '0')}</span>}
-      {project.isDemo && <span className={styles.demo} aria-hidden="true">{t('demoImage')}</span>}
     </>
   );
 
@@ -47,7 +54,7 @@ export async function ProjectCard({
         <h3 className={styles.title}>{project.name}</h3>
         <ArrowUpRight className={styles.arrow} />
       </div>
-      <p className={styles.description}>{project.description}</p>
+      <p className={styles.description}>{project.summary}</p>
       <div className={styles.footer}>
         <span>{project.spaceType}</span>
         <span className={styles.story}>{href ? t('viewStory') : t('detailsSoon')}</span>

@@ -9,6 +9,7 @@
 | [gallery/page.tsx](gallery/page.tsx) | `/ru/gallery` | Заглушка |
 | [articles/page.tsx](articles/page.tsx) | `/ru/articles` | Заглушка |
 | [showroom/page.tsx](showroom/page.tsx) | `/ru/showroom` | Заглушка |
+| [admin/projects/page.tsx](admin/projects/page.tsx) | `/ru/admin/projects` | Форма добавления проекта; POST защищён серверным ключом |
 
 У трёх заглушек одна схема: подготовка хлебных крошек и `SectionPlaceholder`.
 Разметка заглушки описана в [каталоге UI](../shared/UI/README.md).

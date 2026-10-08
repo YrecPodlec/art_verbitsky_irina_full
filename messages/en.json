@@ -1,4 +1,49 @@
 {
+  "projectAdmin": {
+    "title": "Add a project",
+    "description": "Enter the project data. Text and translations stay in messages, images stay in Blob.",
+    "notice": "Opening this form does not save anything. A record is created only when you submit. Projects are saved as drafts by default.",
+    "accessHint": "Enter PROJECT_ADMIN_TOKEN from the server environment. This temporary write-access key is not your MongoDB password.",
+    "fields": {
+      "adminToken": "Project creation access key",
+      "slug": "Slug — the project's future URL segment",
+      "contentKey": "Translation key in messages.projects",
+      "type": "Project type",
+      "category": "Project category",
+      "countryCode": "Country code, e.g. US",
+      "citySlug": "City code, e.g. miami",
+      "areaM2": "Area, m²",
+      "year": "Project year",
+      "publicationStatus": "Publication status",
+      "featured": "Include in featured projects",
+      "coverMediaId": "Cover image"
+    },
+    "statuses": {"draft": "Draft", "published": "Published"},
+    "mediaTitle": "Project images",
+    "mediaHint": "Paste an existing file URL. Enter the actual dimensions in pixels and the alt translation key. This form does not upload files. Publishing requires a cover and translations in both locales.",
+    "mediaFields": {"contentKey": "Caption key in media, e.g. cover", "category": "Image category", "url": "Image URL or /projects/... path", "width": "File width, px", "height": "File height, px"},
+    "mediaCategories": {"visualization": "Visualization", "drawing": "Drawing", "concept": "Concept", "photo": "Photo"},
+    "image": "Image",
+    "addImage": "Add image fields",
+    "removeImage": "Remove image from form",
+    "firstImage": "First image",
+    "submit": "Save project",
+    "saving": "Saving…",
+    "success": "Project saved. ID:",
+    "errors": {
+      "ADMIN_NOT_CONFIGURED": "Creation is disabled: configure PROJECT_ADMIN_TOKEN on the server (at least 32 characters).",
+      "UNAUTHORIZED": "Invalid access key.",
+      "FORBIDDEN": "Requests from another website are forbidden.",
+      "INVALID_PROJECT_INPUT": "Check this field. Publishing also requires translations and images.",
+      "PROJECT_EXISTS": "A project with this slug or translation key already exists.",
+      "DATABASE_UNAVAILABLE": "The project could not be saved. Check your MongoDB connection.",
+      "INVALID_JSON": "Invalid request format.",
+      "PAYLOAD_TOO_LARGE": "The request is too large. Send image links, not image files.",
+      "UNSUPPORTED_MEDIA_TYPE": "The API accepts JSON data only.",
+      "NETWORK_ERROR": "No server response received. Check the database in Compass before retrying: the record may have been saved.",
+      "UNKNOWN": "The request could not be completed."
+    }
+  },
   "services": {
     "eyebrow": "SERVICES & PRICING",
     "sectionIndex": "02 / YOUR SCALE",
@@ -264,22 +309,49 @@
     "gallery": "View all projects",
     "closing": "From a first impression to your own story.",
     "chooseService": "Choose how we work",
-    "showroom": "Open the 3D showroom"
+    "showroom": "Open the 3D showroom",
+    "empty": "Projects will appear in this selection soon.",
+    "unavailable": "Projects could not be loaded. Please try refreshing the page later."
+  },
+  "projectClassification": {
+    "types": {
+      "residential": "Residential",
+      "commercial": "Commercial"
+    },
+    "categories": {
+      "house": "House",
+      "apartment": "Apartment",
+      "hotel": "Hotel",
+      "cafe": "Cafe"
+    },
+    "errors": {
+      "invalidClassification": "Choose a category that matches the project type."
+    }
   },
   "projects": {
     "miami": {
       "name": "Miami",
       "country": "USA",
       "city": "MIAMI",
+      "summary": "Nature within the space",
       "description": "Nature within the space",
+      "story": "",
       "spaceType": "House",
-      "imageAlt": "Demonstration interior image for the Miami project"
+      "imageAlt": "Image of the Miami project",
+      "media": {
+        "cover": {
+          "alt": "Image of the Miami project",
+          "caption": ""
+        }
+      }
     },
     "dubai": {
       "name": "Dubai",
       "country": "UAE",
       "city": "DUBAI",
+      "summary": "Light, texture and geometry",
       "description": "Light, texture and geometry",
+      "story": "",
       "spaceType": "Apartment",
       "imageAlt": "Demonstration interior image for the Dubai project"
     },
@@ -287,13 +359,14 @@
       "name": "Los Angeles",
       "country": "USA",
       "city": "LOS ANGELES",
+      "summary": "The warm side of architecture",
       "description": "The warm side of architecture",
+      "story": "",
       "spaceType": "House",
       "imageAlt": "Demonstration interior image for the Los Angeles project"
     }
   },
   "projectCard": {
-    "demoImage": "DEMO / IMAGE",
     "openProject": "Open project {name}",
     "viewStory": "View the story",
     "detailsSoon": "Project story coming soon"
