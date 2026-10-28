@@ -1,0 +1,22 @@
+.intro { min-width: 0; padding-top: 1rem; }
+.eyebrow { display: flex; align-items: center; gap: .75rem; font-size: .75rem; letter-spacing: .1em; line-height: 1.9; color: var(--color-text-secondary); }
+.eyebrow > span { flex: none; color: var(--home-clay); font-size: 1.5rem; }
+.intro h1 { margin-top: 2rem; font: 400 clamp(3rem, 5.2vw, 6rem)/1.1 var(--font-display); letter-spacing: -.04em; overflow-wrap: anywhere; }
+.intro h1 > span, .intro h1 > em { display: block; }
+.intro h1 > span:nth-child(2) { padding-left: 1.25rem; }
+.intro h1 > em { width: fit-content; margin-left: 1.25rem; padding-right: .5rem; color: var(--home-clay); font-style: normal; border-bottom: .0625rem solid currentColor; }
+.description { max-width: 29rem; margin-top: 2rem; font-size: 1.25rem; line-height: 1.8; color: var(--color-text-secondary); }
+.choose { display: inline-flex; align-items: center; gap: 1.5rem; margin-top: 1.5rem; padding-block: .75rem; border-bottom: .0625rem solid var(--color-border); font-size: 1rem; line-height: 1.6; }
+.choose svg { width: 1.25rem; height: 1.25rem; transform: rotate(90deg); }
+.choose:hover, .author a:hover { color: var(--home-clay); }
+.author { display: flex; align-items: center; gap: 1.5rem; margin-top: 3rem; }
+.portrait { display: block; width: 14rem; max-width: 48%; height: auto; flex: none; }
+.signature { color: var(--home-clay); font: italic 2.5rem/1.2 Georgia, serif; }
+.author p { margin-top: 1rem; white-space: pre-line; font-size: 1rem; line-height: 1.8; color: var(--color-text-secondary); }
+.author a { display: inline-flex; align-items: center; gap: .75rem; margin-top: 1rem; padding-bottom: .5rem; border-bottom: .0625rem solid var(--color-border); font-size: 1rem; line-height: 1.6; }
+.author svg { width: 1rem; height: 1rem; flex: none; }
+.footnote { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; padding-top: 1rem; border-top: .0625rem solid var(--color-border); font-size: .75rem; line-height: 1.8; color: var(--color-text-secondary); }
+.footnote span:first-child { color: var(--home-clay); font-variant-numeric: tabular-nums; }
+@media (max-width: 75rem) { .intro h1 { font-size: clamp(2.75rem, 5.2vw, 4.5rem); } .description { font-size: 1rem; } .portrait { width: 12rem; } }
+@media (max-width: 60rem) { .intro { padding-top: 0; } .intro h1 { font-size: clamp(3.5rem, 8vw, 6rem); } .description { max-width: 38rem; } .portrait { width: 14rem; } }
+@media (max-width: 40rem) { .intro h1 { font-size: clamp(2.75rem, 10.5vw, 4.5rem); } .intro h1 > span:nth-child(2) { padding-left: .75rem; } .intro h1 > em { margin-left: .75rem; } .author { gap: 1.25rem; } .portrait { width: 12rem; max-width: 44%; } .author a { flex-wrap: wrap; gap: .5rem; } }

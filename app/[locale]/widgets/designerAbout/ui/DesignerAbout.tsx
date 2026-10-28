@@ -6,7 +6,8 @@ import {Section, SectionTitle, Eyebrow} from '@/app/[locale]/shared/UI/section';
 import {Principle} from './Principle';
 import styles from './DesignerAbout.module.scss';
 
-const principles = ['nature', 'clarity', 'personal'] as const;
+// Образование и два подхода: порядок пунктов общий для всех языков.
+const principles = ['education', 'salutogenic', 'biophilic'] as const;
 
 // Статичный блок об авторе рендерится на сервере, фотография загружается по мере прокрутки.
 export async function DesignerAbout() {
@@ -14,9 +15,8 @@ export async function DesignerAbout() {
   return <Section id="approach" eyebrow={t('eyebrow')} index={t('sectionIndex')} tone="surface">
     <div className={styles.layout}>
       <figure className={styles.portrait}>
-        <Image src={portrait} alt={t('imageAlt')} sizes="(max-width: 50rem) 90vw, 45vw" loading="lazy" />
-        <figcaption>{t.rich('name', {br: () => <br />})}<span>{t('role')}</span></figcaption>
-        <span className={styles.spark} aria-hidden="true">✦</span>
+        {/* Оригинальная фотография: естественные пропорции, без фильтров и декоративных наложений. */}
+        <Image src={portrait} alt={t('imageAlt')} sizes="(max-width: 50rem) 90vw, 45vw" quality={90} loading="lazy" />
       </figure>
       <div className={styles.copy}>
         <Eyebrow>{t('greeting')}</Eyebrow>

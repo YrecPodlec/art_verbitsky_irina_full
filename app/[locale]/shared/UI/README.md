@@ -8,6 +8,8 @@
 | [actionLink](actionLink/README.md) | `ActionLink`, `ActionButton`: общие переходы и кнопки со стрелкой |
 | [section](section/README.md) | `Section`, `SectionTitle`, `SectionHeading`, `SectionTopline`, `Eyebrow`, `FinePrint`: оформление секций |
 | [breadcrumbs](breadcrumbs/README.md) | `Breadcrumbs`: отображение готовой цепочки страниц |
+| [pagination](pagination/README.md) | `Pagination`: номера страниц, прямые стрелки и неактивные состояния |
+| [fixedHeaderShell](fixedHeaderShell/README.md) | Место под фиксированную шапку без глобального отступа на всех страницах |
 | [accordion](accordion/README.md) | `AccordionItem`: раскрывающийся пункт на `details` |
 | [formField](formField/README.md) | `FormField`: подпись и оформление input/select/textarea |
 | [icons](icons/README.md) | SVG-стрелки и сердце |
@@ -19,6 +21,11 @@
 ## Стили и импорты
 
 SCSS-модуль расположен рядом с TSX. Его классы используются только через импорт `styles`.
+
+Для портфолио добавлены `iconButton/IconButton.tsx` (компактные кнопки просмотрщика),
+`portfolioState/PortfolioState.tsx` (пустое состояние/ошибка с текстами из props) и
+`refreshButton/RefreshButton.tsx` (повторный запрос серверной страницы с pending-состоянием).
+Последний переиспользует ActionButton и не содержит собственной копии стилей.
 Цвета и длительности движения доступны через переменные из `../../globals.css`.
 `className`, если компонент его принимает, позволяет задать расположение в конкретном блоке.
 
@@ -29,7 +36,8 @@ SCSS-модуль расположен рядом с TSX. Его классы и
 ## Небольшие компоненты без отдельного README
 
 У `FloorPlan` рисунок меняется в SVG внутри TSX, сетка и цвета — в соседнем SCSS.
-Подпись задаёт widget `workProcess` через перевод `workProcess.planCaption`.
+Это прежняя декоративная схема. `workProcess` теперь показывает обычную картинку
+`public/img.png` вместо неё; здесь компонент оставлен для возможного повторного использования.
 
 `SectionPlaceholder` принимает `section: 'gallery' | 'articles' | 'showroom'`.
 Тексты берёт из `siteHeader`, возвращает отдельный `main`.

@@ -1,0 +1,10 @@
+.root { background: var(--color-forest); color: var(--color-paper); font-family: var(--font-body); }
+.catalog { padding: 3rem var(--page-gutter) 5rem; }
+.caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin: 2rem 0; color: var(--color-text-subtle); font-size: .75rem; line-height: 1.6; }
+.caption strong { color: var(--color-accent-soft); font-weight: 400; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; align-items: stretch; }
+.pagination { margin-top: 3rem; padding-top: 2rem; border-top: .0625rem solid var(--color-border); }
+.state { padding: 3rem var(--page-gutter); }
+.loading { padding: 6rem var(--page-gutter); min-height: 60vh; background: var(--color-forest-deep); color: var(--color-accent-soft); font: 1.25rem/1.8 var(--font-body); }
+@media (max-width: 64rem) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; } }
+@media (max-width: 40rem) { .catalog { padding-block: 2rem 3rem; } .grid { grid-template-columns: 1fr; } }

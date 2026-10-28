@@ -1,6 +1,7 @@
 .layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 6.25rem; margin-top: 2.75rem; }
 .intro { min-width: 0; > p { color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6; margin-top: 1.5rem; } }
-.plan { max-width: 23.25rem; margin-top: 2.25rem; }
+.plan { display: block; max-width: 28rem; margin-top: 2.25rem; }
+.planImage { display: block; width: 100%; height: auto; }
 .action { margin-top: 1.5rem; }
 .step {
   > p { color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6; margin: .75rem 0 1.25rem; }

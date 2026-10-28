@@ -17,7 +17,6 @@
   z-index: -3;
   object-fit: cover;
   object-position: 62% 50%;
-  transition: object-position var(--motion-slow) var(--motion-ease);
 }
 
 .shade {
@@ -228,9 +227,6 @@
     font-size: clamp(3.25rem, 8.4vw, 4.25rem);
   }
 
-  .image {
-    object-position: 66% 50%;
-  }
 
   .shade {
     background:
@@ -312,9 +308,6 @@
     }
   }
 
-  .image {
-    object-position: 65% 50%;
-  }
 
   .shade {
     background:

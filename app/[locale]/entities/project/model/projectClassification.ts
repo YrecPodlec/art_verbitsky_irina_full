@@ -4,11 +4,11 @@ import type {ProjectCategory, ProjectType} from '@/app/generated/prisma/enums';
 // Здесь только постоянные коды; отображаемые названия должны быть в messages.
 export const categoriesByType = {
   residential: ['house', 'apartment'],
-  commercial: ['hotel', 'cafe'],
+  commercial: ['hotel', 'cafe', 'office'],
 } as const satisfies Record<ProjectType, readonly ProjectCategory[]>;
 
 // Тип выводится из справочника: residential допускает только house/apartment,
-// commercial — только hotel/cafe. Отдельный повторяющийся список не нужен.
+// commercial — только hotel/cafe/office. Отдельный повторяющийся список не нужен.
 export type ProjectClassification = {
   [Type in keyof typeof categoriesByType]: {
     type: Type;

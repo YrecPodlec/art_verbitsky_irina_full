@@ -3,6 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
+    qualities: [75, 90],
     // Разрешаем только наш публичный Blob и каталог проектов, а не любые внешние URL.
     remotePatterns: [{
       protocol: 'https',

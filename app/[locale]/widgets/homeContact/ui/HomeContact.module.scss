@@ -1,0 +1,11 @@
+.section { max-width: 112rem; margin-inline: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5rem; padding: 3rem var(--page-gutter) 4rem; border-top: .0625rem solid var(--color-border); }
+.eyebrow { font-size: .75rem; line-height: 1.8; letter-spacing: .12em; color: var(--color-text-secondary); }
+.section h2 { margin-top: 1.5rem; font: 400 clamp(2.75rem, 4vw, 4.5rem)/1.2 var(--font-display); letter-spacing: -.03em; }
+.section h2 em { display: block; color: var(--home-clay); font-style: normal; }
+.copy { padding-top: 2rem; max-width: 34rem; }
+.copy p { font-size: 1rem; line-height: 1.9; color: var(--color-text-secondary); }
+.copy a { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-bottom: 1rem; margin-top: 1.5rem; border-bottom: .0625rem solid var(--color-border); font-size: 1rem; line-height: 1.7; overflow-wrap: anywhere; }
+.copy svg { width: 1.5rem; height: 1.5rem; flex: none; }
+.copy > span { display: block; margin-top: 1rem; font-size: .75rem; line-height: 1.8; color: var(--color-text-secondary); }
+@media (max-width: 60rem) { .section { gap: 3rem; } }
+@media (max-width: 40rem) { .section { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 3rem; } .copy { padding-top: 0; } }

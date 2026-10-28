@@ -1,4 +1,206 @@
 {
+  "home": {
+    "metaTitle": "Irina Verbitsky — spaces and art",
+    "metaDescription": "Irina Verbitsky. Spaces and art that leave room for you.",
+    "skip": "Skip to content",
+    "header": {
+      "brand": "IRINA VERBITSKY",
+      "caption": "SPACES AND ART",
+      "brandLabel": "Irina Verbitsky — home",
+      "navigation": "Main navigation",
+      "directions": "Explore",
+      "about": "About Irina",
+      "contact": "Contact",
+      "write": "Write to me",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "intro": {
+      "eyebrow": "THE PERSONAL WORLD OF IRINA VERBITSKY",
+      "titleOne": "The art of",
+      "titleTwo": "feeling",
+      "titleThree": "at home.",
+      "description": "Through space, colour and form. I create things that become part of your life — and feel truly yours.",
+      "choose": "Find your direction",
+      "portraitAlt": "Irina Verbitsky",
+      "portraitCopy": "Different facets of creativity.\nOne attentive perspective.",
+      "meet": "Let’s get acquainted",
+      "closing": "DIFFERENT FACETS. ONE ATTENTIVE PERSPECTIVE."
+    },
+    "directions": {
+      "heading": "CHOOSE WHERE WE BEGIN",
+      "count": "{count, plural, one {# direction} other {# directions}}",
+      "scrollHint": "Scroll within this panel to explore the directions.",
+      "scrollLabel": "Scrollable list of website directions",
+      "items": {
+        "interior": {
+          "code": "INTERIOR",
+          "tag": "SPACES FOR LIVING",
+          "kicker": "A PLACE TO FEEL AT HOME",
+          "title": "Interior design",
+          "description": "From a feeling to a space. From an idea to your story.",
+          "action": "Enter the world of interiors",
+          "imageAlt": "A warm living room with natural materials"
+        },
+        "art": {
+          "code": "ART",
+          "tag": "COLOUR. FORM. FEELING.",
+          "kicker": "BEYOND WHAT WORDS CAN SAY",
+          "title": "Art",
+          "description": "Images that begin a personal conversation.",
+          "action": "Explore this direction",
+          "imageAlt": "An abstract composition in terracotta, sand and olive tones — a visual study for the art section",
+          "note": "The image for the Art section is a visual study for review."
+        }
+      }
+    },
+    "about": {
+      "eyebrow": "A FEW WORDS ABOUT ME",
+      "titleOne": "At the centre —",
+      "titleTwo": "a person.",
+      "lead": "For me, creativity begins not with a beautiful image, but with paying attention.",
+      "body": "To the way you live. To what you notice. To what helps you feel like yourself. Interiors and art are different ways of speaking about the same things: the personal, the familiar and the real.",
+      "note": "This introduction is draft copy for the prototype. Irina’s own story will appear here.",
+      "action": "Let’s talk"
+    },
+    "contact": {
+      "eyebrow": "THE BEGINNING OF A GOOD STORY",
+      "titleOne": "What speaks",
+      "titleTwo": "to you?",
+      "body": "Tell me about your idea. A space, an artwork, or simply a feeling — that’s a good place to start.",
+      "format": "A personal letter. An unhurried conversation."
+    },
+    "artPreview": {
+      "title": "Another language of feeling.",
+      "description": "This will become a dedicated section for Irina’s work. For now, it is a visual study: original artworks, descriptions and a distinct design will be added after review.",
+      "imageAlt": "Visual study for the Art section",
+      "note": "The image for the Art section is a visual study for review.",
+      "action": "Discuss an idea",
+      "back": "← Back to home"
+    }
+  },
+  "siteFooter": {
+    "motto": "Space.\nArt. You.",
+    "directionsLabel": "Explore",
+    "exploreLabel": "Discover",
+    "about": "About Irina",
+    "gallery": "Projects",
+    "journal": "Journal",
+    "showroom": "3D showroom",
+    "invitation": "Your story\nstarts here.",
+    "caption": "SPACES AND ART",
+    "home": "Home"
+  },
+  "gallery": {
+    "metaTitle": "Project gallery — Irina Verbitsky",
+    "metaDescription": "Residential and commercial interiors. Explore projects, visualizations and the stories behind them.",
+    "eyebrow": "A COLLECTION OF SPACES",
+    "title": "Stories<br></br>to <accent>live in.</accent>",
+    "description": "The architecture of everyday life. From the whole to the smallest detail.",
+    "imageAlt": "Atmosphere of the interior portfolio",
+    "explore": "Explore projects",
+    "catalogLabel": "Project collection",
+    "catalogNote": "Every space has a story",
+    "results": "Showing {from}–{to} of {total}",
+    "emptyTitle": "Nothing here just yet",
+    "emptyDescription": "Try another search or clear the filters. New projects will appear here once published.",
+    "reset": "Clear filters",
+    "unavailableTitle": "Projects are temporarily unavailable",
+    "unavailableDescription": "We could not load the collection from the database. Please try again shortly.",
+    "retry": "Try again",
+    "loading": "Bringing the collection together…",
+    "pagination": "Collection pages",
+    "page": "Page {current} of {total}",
+    "previous": "Previous projects",
+    "next": "Next projects",
+    "filters": {
+      "type": "Project direction",
+      "allProjects": "All projects",
+      "category": "Space type",
+      "allCategories": "All categories",
+      "country": "Country",
+      "allCountries": "All countries",
+      "searchLabel": "Search the collection",
+      "searchPlaceholder": "Name, city, atmosphere…",
+      "search": "Search",
+      "pending": "Updating the collection…"
+    }
+  },
+  "portfolioInvitation": {
+    "eyebrow": "FROM INSPIRATION TO YOUR OWN SPACE",
+    "title": "Shall we start a new <accent>story?</accent>",
+    "action": "Discuss an interior",
+    "signature": "NATURE. ARCHITECTURE. YOU."
+  },
+  "projectCase": {
+    "metaTitle": "{name} — an Irina Verbitsky project",
+    "navigation": "Project sections",
+    "contents": "INSIDE THE STORY",
+    "sectionLabel": "PROJECT STORY",
+    "discuss": "Discuss a similar project",
+    "back": "All projects",
+    "viewImages": "Explore images · {count}",
+    "pending": "To be confirmed",
+    "areaValue": "{value} m²",
+    "facts": {
+      "category": "Space type",
+      "location": "Location",
+      "area": "Area",
+      "year": "Project year"
+    },
+    "storyPlaceholder": "The full project story will appear here: from the first conversation and initial idea to the decisions that shaped the space.",
+    "materialsPending": "This section is ready. Materials will appear once added to the project, without changing the page structure.",
+    "notFoundTitle": "Project not found",
+    "notFoundDescription": "The link may have changed, or this project has not been published yet. Explore other stories in the gallery.",
+    "unavailableTitle": "We could not open this project",
+    "unavailableDescription": "The database is temporarily unavailable. Please try opening the project again.",
+    "retry": "Try again",
+    "sections": {
+      "request": {
+        "title": "The brief and the story",
+        "body": "A future account of the project, the client's wishes and everyday life in the space."
+      },
+      "before": {
+        "title": "The starting point",
+        "body": "This section will present the original space, its defining features and the constraints that shaped the work.",
+        "empty": "Before the story began"
+      },
+      "layout": {
+        "title": "The spatial plan",
+        "body": "A place to explain the layout: connections between rooms, movement through the space and functional zones.",
+        "empty": "The plan is on its way"
+      },
+      "concept": {
+        "title": "Concept and decisions",
+        "body": "Materials, colour, light and objects. Here we will explain how individual decisions come together as one interior.",
+        "empty": "The concept in detail"
+      },
+      "visuals": {
+        "title": "Visualizations",
+        "body": "Explore the space from different angles. Select an image to take a closer look.",
+        "empty": "Visualizations are coming soon"
+      },
+      "documents": {
+        "title": "Working drawings",
+        "body": "Drawings, elevations, junctions and details that help turn an idea into a built space will appear here.",
+        "empty": "A place for the drawings"
+      },
+      "result": {
+        "title": "Realization and outcome",
+        "body": "This section is reserved for photographs of the completed interior and the story of the outcome. Visualizations do not replace photographs of the finished work.",
+        "empty": "The story continues"
+      }
+    },
+    "viewer": {
+      "original": "Open original",
+      "open": "Open image",
+      "close": "Close viewer",
+      "previous": "Previous image",
+      "next": "Next image",
+      "thumbnails": "Choose an image",
+      "select": "Show image"
+    }
+  },
   "projectAdmin": {
     "title": "Add a project",
     "description": "Enter the project data. Text and translations stay in messages, images stay in Blob.",
@@ -154,6 +356,7 @@
     "title": "Considered.<br></br>Discussed.<br></br><accent>Brought to life.</accent>",
     "description": "You know what is happening<br></br>at every step — and what comes next.",
     "planCaption": "SKETCH / DEMONSTRATION PLAN",
+    "planAlt": "Furniture layout showing the bedroom, living room, kitchen, balcony and service spaces",
     "action": "Discuss your project",
     "whatWeDo": "WHAT WE DO",
     "whatYouGet": "WHAT YOU RECEIVE",
@@ -193,30 +396,30 @@
     }
   },
   "designerAbout": {
-    "eyebrow": "IRINA & HER APPROACH",
-    "sectionIndex": "04 / PEOPLE AT THE CENTRE",
+    "eyebrow": "DESIGN APPROACH",
+    "sectionIndex": "04 / EDUCATION & PRINCIPLES",
     "imageAlt": "Irina Verbitsky",
     "name": "IRINA<br></br>VERBITSKY",
     "role": "INTERIOR DESIGNER",
-    "greeting": "NICE TO MEET YOU. I'M IRINA.",
-    "title": "Beauty is<br></br>about how<br></br><accent>you feel.</accent>",
-    "description": "I am drawn to spaces where you can be yourself. Where materials invite touch, light changes with the day, and every object finds its place.",
-    "philosophy": "I combine aesthetics with attention to everyday life: your rituals, favourite activities, and the things that make you feel at home.",
+    "greeting": "IRINA VERBITSKY · INTERIOR DESIGNER",
+    "title": "Design starts<br></br>with considered<br></br><accent>decisions.</accent>",
+    "description": "I’m Irina Verbitsky. I design residential and commercial interiors, considering layout, lighting, materials and details in relation to the purpose of each space and the everyday lives of its occupants.",
+    "philosophy": "My work draws on salutogenic and biophilic design. These approaches help shape a project around an understandable layout, everyday usability and a connection with nature.",
     "principles": {
-      "nature": {
-        "title": "Closer to nature",
-        "description": "Living plants, natural textures and a connection to the landscape."
+      "education": {
+        "title": "Master’s degree",
+        "description": "A master’s degree forms my academic foundation. In my work, I combine theoretical training with the analysis of layouts, materials and the ways a space will be used."
       },
-      "clarity": {
-        "title": "Greater clarity",
-        "description": "An intuitive layout, comfortable lighting and calm paths through the space."
+      "salutogenic": {
+        "title": "Salutogenic approach",
+        "description": "I create spaces that are easy to understand and use, considering layout, lighting and everyday routines. Personal habits and meanings help make an interior not only functional, but also familiar and relevant to you."
       },
-      "personal": {
-        "title": "Just for you",
-        "description": "Decisions that reflect your needs and the way you live."
+      "biophilic": {
+        "title": "Biophilic approach",
+        "description": "I connect interiors with nature through daylight, plants, natural materials, colours and textures. The aim is not simply to add greenery, but to integrate these elements with the layout and character of the space."
       }
     },
-    "action": "More about my approach"
+    "action": "More about these approaches"
   },
   "showroomTeaser": {
     "eyebrow": "3D SHOWROOM",
@@ -297,7 +500,7 @@
     "projects": "Projects",
     "services": "Services",
     "process": "Process",
-    "approach": "Approach",
+    "approach": "Design approach",
     "showroom": "Showroom",
     "contacts": "Contact"
   },
@@ -322,7 +525,8 @@
       "house": "House",
       "apartment": "Apartment",
       "hotel": "Hotel",
-      "cafe": "Cafe"
+      "cafe": "Cafe",
+      "office": "Office"
     },
     "errors": {
       "invalidClassification": "Choose a category that matches the project type."
@@ -334,13 +538,49 @@
       "country": "USA",
       "city": "MIAMI",
       "summary": "Nature within the space",
-      "description": "Nature within the space",
-      "story": "",
+      "description": "A residential interior in Miami: light, natural tones and attention to everyday life. The visualizations reveal the space, from the overall composition to its individual details.",
+      "story": "This is introductory copy for the project page. The designer's story will appear here: the original brief, the development of the idea and the reasons behind the choice of materials and solutions.",
       "spaceType": "House",
       "imageAlt": "Image of the Miami project",
       "media": {
         "cover": {
           "alt": "Image of the Miami project",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Miami project dining room visualization with a round table and pendant chandelier",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Miami project dining room visualization beside a window and Christmas tree",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Miami project fireplace area visualization beside the staircase",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Miami project living room visualization with a sofa and fireplace area",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Miami project open-plan kitchen and living room visualization",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Miami project living room visualization with a dark sofa and marble wall",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Miami project living room visualization with an indoor tree and panoramic windows",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Another view of the Miami project living room with an indoor tree and grey sofa",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Miami project staircase visualization with a glass balustrade",
           "caption": ""
         }
       }
@@ -348,22 +588,946 @@
     "dubai": {
       "name": "Dubai",
       "country": "UAE",
-      "city": "DUBAI",
+      "city": "Dubai",
       "summary": "Light, texture and geometry",
-      "description": "Light, texture and geometry",
-      "story": "",
+      "description": "Dubai: light, texture and geometry. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
       "spaceType": "Apartment",
-      "imageAlt": "Demonstration interior image for the Dubai project"
+      "imageAlt": "Interior visualization for Dubai, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Dubai, view 1",
+          "caption": ""
+        },
+        "image2_dubai": {
+          "alt": "Interior visualization for Dubai, view 2",
+          "caption": ""
+        },
+        "image3_dubai": {
+          "alt": "Interior visualization for Dubai, view 3",
+          "caption": ""
+        },
+        "image4_dubai": {
+          "alt": "Interior visualization for Dubai, view 4",
+          "caption": ""
+        },
+        "image5_dubai": {
+          "alt": "Interior visualization for Dubai, view 5",
+          "caption": ""
+        },
+        "image6_dubai": {
+          "alt": "Interior visualization for Dubai, view 6",
+          "caption": ""
+        },
+        "image7_dubai": {
+          "alt": "Interior visualization for Dubai, view 7",
+          "caption": ""
+        },
+        "image8_dubai": {
+          "alt": "Interior visualization for Dubai, view 8",
+          "caption": ""
+        },
+        "image9_dubai": {
+          "alt": "Interior visualization for Dubai, view 9",
+          "caption": ""
+        },
+        "image10_dubai": {
+          "alt": "Interior visualization for Dubai, view 10",
+          "caption": ""
+        },
+        "image11_dubai": {
+          "alt": "Interior visualization for Dubai, view 11",
+          "caption": ""
+        },
+        "image12_dubai": {
+          "alt": "Interior visualization for Dubai, view 12",
+          "caption": ""
+        },
+        "image13_dubai": {
+          "alt": "Interior visualization for Dubai, view 13",
+          "caption": ""
+        },
+        "image14_dubai": {
+          "alt": "Interior visualization for Dubai, view 14",
+          "caption": ""
+        },
+        "image15_dubai": {
+          "alt": "Interior visualization for Dubai, view 15",
+          "caption": ""
+        },
+        "image16_dubai": {
+          "alt": "Interior visualization for Dubai, view 16",
+          "caption": ""
+        },
+        "image17_dubai": {
+          "alt": "Interior visualization for Dubai, view 17",
+          "caption": ""
+        },
+        "image18_dubai": {
+          "alt": "Interior visualization for Dubai, view 18",
+          "caption": ""
+        },
+        "image19_dubai": {
+          "alt": "Interior visualization for Dubai, view 19",
+          "caption": ""
+        },
+        "image20_dubai": {
+          "alt": "Interior visualization for Dubai, view 20",
+          "caption": ""
+        },
+        "image21_dubai": {
+          "alt": "Interior visualization for Dubai, view 21",
+          "caption": ""
+        },
+        "image22_dubai": {
+          "alt": "Interior visualization for Dubai, view 22",
+          "caption": ""
+        },
+        "image23_dubai": {
+          "alt": "Interior visualization for Dubai, view 23",
+          "caption": ""
+        },
+        "image24_dubai": {
+          "alt": "Interior visualization for Dubai, view 24",
+          "caption": ""
+        }
+      }
     },
     "los-angeles": {
       "name": "Los Angeles",
       "country": "USA",
-      "city": "LOS ANGELES",
-      "summary": "The warm side of architecture",
-      "description": "The warm side of architecture",
-      "story": "",
+      "city": "Los Angeles",
+      "summary": "The warmer side of architecture",
+      "description": "Los Angeles: the warmer side of architecture. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
       "spaceType": "House",
-      "imageAlt": "Demonstration interior image for the Los Angeles project"
+      "imageAlt": "Interior visualization for Los Angeles, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Los Angeles, view 1",
+          "caption": ""
+        },
+        "image2_la": {
+          "alt": "Interior visualization for Los Angeles, view 2",
+          "caption": ""
+        },
+        "image3_la": {
+          "alt": "Interior visualization for Los Angeles, view 3",
+          "caption": ""
+        },
+        "image4_la": {
+          "alt": "Interior visualization for Los Angeles, view 4",
+          "caption": ""
+        },
+        "image5_la": {
+          "alt": "Interior visualization for Los Angeles, view 5",
+          "caption": ""
+        },
+        "image6_la": {
+          "alt": "Interior visualization for Los Angeles, view 6",
+          "caption": ""
+        },
+        "image7_la": {
+          "alt": "Interior visualization for Los Angeles, view 7",
+          "caption": ""
+        },
+        "image8_la": {
+          "alt": "Interior visualization for Los Angeles, view 8",
+          "caption": ""
+        },
+        "image9_la": {
+          "alt": "Interior visualization for Los Angeles, view 9",
+          "caption": ""
+        }
+      }
+    },
+    "smallHouse": {
+      "name": "Small House",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Rich accents and calm textures",
+      "description": "Small House: rich accents and calm textures. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "House",
+      "imageAlt": "Interior visualization for Small House, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Small House, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Small House, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Small House, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Small House, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Small House, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Small House, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Small House, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Small House, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Small House, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Small House, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "apartmentForTwo": {
+      "name": "Apartment for Two",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "A light-filled home for two",
+      "description": "Apartment for Two: a light-filled home for two. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Apartment for Two, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Apartment for Two, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Apartment for Two, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Apartment for Two, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Apartment for Two, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Apartment for Two, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Apartment for Two, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Apartment for Two, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Apartment for Two, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Apartment for Two, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Apartment for Two, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "downtownHouse": {
+      "name": "Downtown House",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Soft tones for city living",
+      "description": "Downtown House: soft tones for city living. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "House",
+      "imageAlt": "Interior visualization for Downtown House, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Downtown House, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Downtown House, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Downtown House, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Downtown House, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Downtown House, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Downtown House, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Downtown House, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Downtown House, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Downtown House, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Downtown House, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "countryHouse": {
+      "name": "Country House",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Open spaces and a natural palette",
+      "description": "Country House: open spaces and a natural palette. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "House",
+      "imageAlt": "Interior visualization for Country House, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Country House, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Country House, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Country House, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Country House, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Country House, view 5",
+          "caption": ""
+        }
+      }
+    },
+    "flat": {
+      "name": "Apartment",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Contrast, wood and expressive details",
+      "description": "Apartment: contrast, wood and expressive details. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Apartment, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Apartment, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Apartment, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Apartment, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Apartment, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Apartment, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Apartment, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Apartment, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Apartment, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Apartment, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Apartment, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "homeWithCats": {
+      "name": "A Home with Cats",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Light, green tones and comfort",
+      "description": "A Home with Cats: light, green tones and comfort. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for A Home with Cats, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for A Home with Cats, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for A Home with Cats, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for A Home with Cats, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for A Home with Cats, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for A Home with Cats, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for A Home with Cats, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for A Home with Cats, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for A Home with Cats, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for A Home with Cats, view 9",
+          "caption": ""
+        }
+      }
+    },
+    "banya": {
+      "name": "Bathhouse",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Wood, water and a space to unwind",
+      "description": "Bathhouse: wood, water and a space to unwind. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "House",
+      "imageAlt": "Interior visualization for Bathhouse, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Bathhouse, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Bathhouse, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Bathhouse, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Bathhouse, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Bathhouse, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Bathhouse, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Bathhouse, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Bathhouse, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Bathhouse, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Bathhouse, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "kidsRoom": {
+      "name": "Kids’ Room",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "A space for play, study and rest",
+      "description": "Kids’ Room: a space for play, study and rest. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Kids’ Room, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Kids’ Room, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Kids’ Room, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Kids’ Room, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Kids’ Room, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Kids’ Room, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Kids’ Room, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Kids’ Room, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Kids’ Room, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Kids’ Room, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Kids’ Room, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "krylaty": {
+      "name": "Krylaty",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "A light interior with deep green accents",
+      "description": "Krylaty: a light interior with deep green accents. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Krylaty, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Krylaty, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Krylaty, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Krylaty, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Krylaty, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Krylaty, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Krylaty, view 6",
+          "caption": ""
+        }
+      }
+    },
+    "magellanStreet": {
+      "name": "Magellan Street",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Dark tones and warm wood textures",
+      "description": "Magellan Street: dark tones and warm wood textures. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Magellan Street, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Magellan Street, view 1",
+          "caption": ""
+        },
+        "image1": {
+          "alt": "Interior visualization for Magellan Street, view 2",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Magellan Street, view 3",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Magellan Street, view 4",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Magellan Street, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Magellan Street, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Magellan Street, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Magellan Street, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Magellan Street, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Magellan Street, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "miamiStudio": {
+      "name": "Miami Studio",
+      "country": "USA",
+      "city": "Miami",
+      "summary": "A compact space with vibrant accents",
+      "description": "Miami Studio: a compact space with vibrant accents. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Miami Studio, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Miami Studio, view 1",
+          "caption": ""
+        },
+        "image1": {
+          "alt": "Interior visualization for Miami Studio, view 2",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Miami Studio, view 3",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Miami Studio, view 4",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Miami Studio, view 5",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Miami Studio, view 6",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Miami Studio, view 7",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Miami Studio, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Miami Studio, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Miami Studio, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "miamiBath": {
+      "name": "Miami Bathroom",
+      "country": "USA",
+      "city": "Miami",
+      "summary": "Geometry, light and varied finishes",
+      "description": "Miami Bathroom: geometry, light and varied finishes. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Miami Bathroom, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Miami Bathroom, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Miami Bathroom, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Miami Bathroom, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Miami Bathroom, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Miami Bathroom, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Miami Bathroom, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Miami Bathroom, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Miami Bathroom, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Miami Bathroom, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Miami Bathroom, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "moscowResident": {
+      "name": "Moscow Residence",
+      "country": "Russia",
+      "city": "Moscow",
+      "summary": "A light foundation and colourful accents",
+      "description": "Moscow Residence: a light foundation and colourful accents. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Moscow Residence, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Moscow Residence, view 1",
+          "caption": ""
+        },
+        "image1": {
+          "alt": "Interior visualization for Moscow Residence, view 2",
+          "caption": ""
+        },
+        "image2_moscow_resident": {
+          "alt": "Interior visualization for Moscow Residence, view 3",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Moscow Residence, view 4",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Moscow Residence, view 5",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Moscow Residence, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Moscow Residence, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Moscow Residence, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Moscow Residence, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Moscow Residence, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "miamiOffice": {
+      "name": "Miami Office",
+      "country": "USA",
+      "city": "Miami",
+      "summary": "A workplace with red accents",
+      "description": "Miami Office: a workplace with red accents. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Office",
+      "imageAlt": "Interior visualization for Miami Office, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Miami Office, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Miami Office, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Miami Office, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Miami Office, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Miami Office, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Miami Office, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Miami Office, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Miami Office, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Miami Office, view 9",
+          "caption": ""
+        }
+      }
+    },
+    "riverPark": {
+      "name": "River Park",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "Natural motifs and expressive textures",
+      "description": "River Park: natural motifs and expressive textures. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for River Park, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for River Park, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for River Park, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for River Park, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for River Park, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for River Park, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for River Park, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for River Park, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for River Park, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for River Park, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for River Park, view 10",
+          "caption": ""
+        }
+      }
+    },
+    "winterSummer": {
+      "name": "Winter / Summer",
+      "country": "Location to be confirmed",
+      "city": "—",
+      "summary": "A soft palette and changing moods",
+      "description": "Winter / Summer: a soft palette and changing moods. The gallery brings together interior visualizations, material combinations and design details.",
+      "story": "This is a placeholder for the project story. It can describe the initial brief, the development of the concept and the design decisions. Confirmed details and the designer’s own story will be added later.",
+      "spaceType": "Apartment",
+      "imageAlt": "Interior visualization for Winter / Summer, view 1",
+      "media": {
+        "cover": {
+          "alt": "Interior visualization for Winter / Summer, view 1",
+          "caption": ""
+        },
+        "image2": {
+          "alt": "Interior visualization for Winter / Summer, view 2",
+          "caption": ""
+        },
+        "image3": {
+          "alt": "Interior visualization for Winter / Summer, view 3",
+          "caption": ""
+        },
+        "image4": {
+          "alt": "Interior visualization for Winter / Summer, view 4",
+          "caption": ""
+        },
+        "image5": {
+          "alt": "Interior visualization for Winter / Summer, view 5",
+          "caption": ""
+        },
+        "image6": {
+          "alt": "Interior visualization for Winter / Summer, view 6",
+          "caption": ""
+        },
+        "image7": {
+          "alt": "Interior visualization for Winter / Summer, view 7",
+          "caption": ""
+        },
+        "image8": {
+          "alt": "Interior visualization for Winter / Summer, view 8",
+          "caption": ""
+        },
+        "image9": {
+          "alt": "Interior visualization for Winter / Summer, view 9",
+          "caption": ""
+        },
+        "image10": {
+          "alt": "Interior visualization for Winter / Summer, view 10",
+          "caption": ""
+        }
+      }
     }
   },
   "projectCard": {
@@ -388,7 +1552,7 @@
     "metaDescription": "Individual interiors where the beauty of nature meets your personality and way of life.",
     "imageAlt": "A biophilic interior with stone, wood and evening light",
     "eyebrow": "NATURE. ARCHITECTURE. YOU.",
-    "title": "A space<br></br>where you<br></br><accent>want to be.</accent>",
+    "title": "A space<br></br>where you<br></br><accent>want to LIVE.</accent>",
     "description": "Individual interiors where<br></br> the beauty of nature meets your<br></br> personality and way of life.",
     "signature": "IRINA VERBITSKY / INTERIOR DESIGNER",
     "note": "A LIVING SPACE.<br></br>YOUR NEW STORY.",

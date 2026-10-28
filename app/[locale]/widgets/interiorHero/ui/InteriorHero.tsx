@@ -17,8 +17,8 @@ export async function InteriorHero({breadcrumbs}: InteriorHeroProps) {
 
   return (
     <section className={styles.hero} id="beginning" aria-labelledby="interior-hero-title">
-      {/* Первый экран загружаем заранее; fill и sizes позволяют Next.js подобрать размер изображения. */}
-      <Image className={styles.image} src={interiorImage} alt={t('imageAlt')} fill sizes="100vw" preload />
+      {/* Локальный фон первого экрана: не зависит от подключения к MongoDB. */}
+      <Image className={styles.image} src={interiorImage} alt={t('imageAlt')} fill sizes="100vw" quality={90} preload />
       <div className={styles.shade} aria-hidden="true" />
       <div className={styles.frame} aria-hidden="true" />
 

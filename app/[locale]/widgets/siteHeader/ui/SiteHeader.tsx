@@ -6,6 +6,7 @@ import {Link} from '@/i18n/navigation';
 import {LanguageSwitcher} from '@/app/[locale]/features/languageSwitcher/ui/LanguageSwitcher';
 import {ProfileButton} from '@/app/[locale]/features/profileButton/ui/ProfileButton';
 import {NavLink} from './NavLink';
+import {useFixedHeaderOffset} from '@/app/[locale]/shared/lib/layout/useFixedHeaderOffset';
 import styles from './SiteHeader.module.scss';
 
 const links = [
@@ -21,21 +22,8 @@ export function SiteHeader() {
   const headerRef = useRef<HTMLElement>(null);
   const mobileMenuId = useId();
 
-  useEffect(() => {
-    const header = headerRef.current;
-    if (!header) return;
-
-    // Fixed-шапка не участвует в потоке: измеряем её реальную высоту, а не задаём её вручную.
-    const syncOffset = () => document.documentElement.style.setProperty('--site-header-offset', `${header.offsetHeight}px`);
-    const observer = new ResizeObserver(syncOffset);
-    observer.observe(header);
-    syncOffset();
-
-    return () => {
-      observer.disconnect();
-      document.documentElement.style.removeProperty('--site-header-offset');
-    };
-  }, []);
+  // Возвращаем прежнюю поправку якорей Interior; главная использует свой отступ.
+  useFixedHeaderOffset(headerRef, '-5rem');
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -56,7 +44,7 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className={styles.header} ref={headerRef}>
+    <header className={styles.header} ref={headerRef} data-interior-header="true">
       <Link className={styles.brand} href="/" aria-label={t('brandLabel')} onClick={() => setMenuOpen(false)}>
         {/* Заглушку заменим изображением логотипа, когда оно будет готово. */}
         <span className={styles.logoPlaceholder} aria-hidden="true">IV</span>

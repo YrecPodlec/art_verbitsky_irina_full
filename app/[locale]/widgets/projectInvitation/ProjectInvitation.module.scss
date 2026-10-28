@@ -1,0 +1,5 @@
+.root { padding: 5rem var(--page-gutter); border-block: .0625rem solid var(--color-border); text-align: center; background: var(--color-forest-deep); color: var(--color-paper); }
+.root p { color: var(--color-accent-soft); font: .75rem/1.6 var(--font-body); letter-spacing: .16em; }
+.root h2 { max-width: 52rem; margin: 1.5rem auto 2rem; font: 400 clamp(2.5rem, 5vw, 4.5rem)/1.1 var(--font-display); }
+.root em { color: var(--color-accent-soft); font-style: normal; }
+@media (max-width: 48rem) { .root { padding-block: 3rem; } }

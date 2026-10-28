@@ -30,6 +30,7 @@ enum ProjectCategory {
   apartment
   hotel
   cafe
+  office
 }
 
 enum ProjectMediaCategory {
@@ -88,7 +89,7 @@ model Project {
   publicationStatus PublicationStatus @default(draft)
   type              ProjectType
 
-  // Жилое: house/apartment. Коммерческое: hotel/cafe.
+  // Жилое: house/apartment. Коммерческое: hotel/cafe/office.
   // Enum ограничивает значения, но не их сочетания: перед записью вызываем
   // assertProjectClassification с итоговыми type и category.
   // Дополнительное правило самой БД устанавливает npm run db:init (не prisma generate).

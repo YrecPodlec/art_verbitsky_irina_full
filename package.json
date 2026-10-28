@@ -11,8 +11,15 @@
     "test:project-classification": "node --test --test-reporter=spec \"app/*/entities/project/model/projectClassification.test.mjs\"",
     "test:projects": "node --import tsx --test --test-reporter=spec prisma/projectValidator.test.ts \"app/*/entities/project/model/getProjectCover.test.ts\" \"app/*/entities/project/model/projectClassification.test.mjs\"",
     "test:project-api": "node --import tsx --test --test-reporter=spec \"app/*/entities/project/model/parseProjectInput.test.ts\" \"app/*/shared/lib/api/*.test.ts\"",
+    "test:portfolio": "node --import tsx --test --test-reporter=spec \"app/*/entities/project/model/catalogQuery.test.ts\" \"app/*/entities/project/model/projectOrder.test.ts\" \"app/*/features/viewProjectMedia/model/*.test.ts\"",
+    "test:portfolio:http": "node scripts/test-portfolio-http.mjs",
+    "test:home": "node --import tsx --test --test-reporter=spec \"app/*/entities/direction/model/*.test.ts\"",
+    "test:home:http": "node scripts/test-home-http.mjs",
     "db:generate": "prisma generate",
     "db:check": "tsx prisma/database.ts check",
+    "db:inspect-images": "node scripts/inspect-project-blobs.mjs",
+    "db:import-projects": "node --conditions=react-server --import tsx prisma/importProjects.ts",
+    "test:project-import": "node --import tsx --test --test-reporter=spec prisma/buildProjectImport.test.ts",
     "db:init": "prisma generate && tsx prisma/database.ts init"
   },
   "dependencies": {
@@ -29,6 +36,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vercel/blob": "^2.8.2",
     "dotenv": "^18.0.6",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",

@@ -12,7 +12,7 @@ a{
 html {
     font-size: 1rem;
     scroll-behavior: smooth;
-    scroll-padding-top: calc(var(--site-header-offset) - 5rem);
+    scroll-padding-top: max(0rem, calc(var(--site-header-offset) + var(--anchor-scroll-adjustment)));
 }
 :root {
     /* Палитра макета: общие цвета переиспользуются через var(), а не копируются в компоненты. */
@@ -42,8 +42,9 @@ html {
     --font-display: 'InteriorMain', Georgia, serif;
     --font-body: 'InteriorSecond', Arial, sans-serif;
     --page-gutter: clamp(1.5rem, 5.2vw, 6.25rem);
-    /* Начальный отступ уточняется по реальной высоте шапки через ResizeObserver. */
-    --site-header-offset: 6.5rem;
+    /* На страницах без шапки нет отступа. Нужная шапка измеряет себя отдельно. */
+    --site-header-offset: 0rem;
+    --anchor-scroll-adjustment: 1rem;
     --motion-fast: 180ms;
     --motion-standard: 280ms;
     --motion-slow: 420ms;
@@ -64,7 +65,6 @@ button:focus-visible {
 body {
     background-color: black;
     color: white;
-    padding-top: var(--site-header-offset);
 }
 
 @font-face {
@@ -80,12 +80,6 @@ body {
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
-@media (max-width: 72rem) {
-    :root { --site-header-offset: 5.5rem; }
-}
-@media (max-width: 32.5rem) {
-    :root { --site-header-offset: 4.75rem; }
 }
 @media (prefers-reduced-motion: reduce) {
     :root {

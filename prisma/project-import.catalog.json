@@ -1,0 +1,21 @@
+[
+  {"folder":"1_small_house","slug":"small-house","contentKey":"smallHouse","type":"residential","category":"house"},
+  {"folder":"2_old_cuple","slug":"apartment-for-two","contentKey":"apartmentForTwo","type":"residential","category":"apartment"},
+  {"folder":"3_downtown_house","slug":"downtown-house","contentKey":"downtownHouse","type":"residential","category":"house"},
+  {"folder":"4_country_house","slug":"country-house","contentKey":"countryHouse","type":"residential","category":"house"},
+  {"folder":"5_flat","slug":"flat","contentKey":"flat","type":"residential","category":"apartment"},
+  {"folder":"6_cats","slug":"home-with-cats","contentKey":"homeWithCats","type":"residential","category":"apartment"},
+  {"folder":"7_banya","slug":"banya","contentKey":"banya","type":"residential","category":"house"},
+  {"folder":"8_kidsroom","slug":"kids-room","contentKey":"kidsRoom","type":"residential","category":"apartment"},
+  {"folder":"dubai","slug":"dubai-apartment","contentKey":"dubai","type":"residential","category":"apartment","countryCode":"AE","citySlug":"dubai","coverFile":"1-dubai.webp"},
+  {"folder":"krylaty","slug":"krylaty","contentKey":"krylaty","type":"residential","category":"apartment"},
+  {"folder":"los-angeles","slug":"los-angeles-house","contentKey":"los-angeles","type":"residential","category":"house","countryCode":"US","citySlug":"los-angeles","coverFile":"1-la.webp"},
+  {"folder":"magellan-street","slug":"magellan-street","contentKey":"magellanStreet","type":"residential","category":"apartment","coverFile":"1-magellan.webp"},
+  {"folder":"miami-studio","slug":"miami-studio","contentKey":"miamiStudio","type":"residential","category":"apartment","countryCode":"US","citySlug":"miami","coverFile":"1-studio-miami.webp"},
+  {"folder":"miami","slug":"miami-house","contentKey":"miami","type":"residential","category":"house","countryCode":"US","citySlug":"miami","coverFile":"1.webp"},
+  {"folder":"miami_bath","slug":"miami-bath","contentKey":"miamiBath","type":"residential","category":"apartment","countryCode":"US","citySlug":"miami"},
+  {"folder":"moscow-resident","slug":"moscow-resident","contentKey":"moscowResident","type":"residential","category":"apartment","countryCode":"RU","citySlug":"moscow","coverFile":"1-moscow-resident.webp"},
+  {"folder":"office_miami","slug":"miami-office","contentKey":"miamiOffice","type":"commercial","category":"office","countryCode":"US","citySlug":"miami"},
+  {"folder":"river-park","slug":"river-park","contentKey":"riverPark","type":"residential","category":"apartment","coverFile":"1-river.webp"},
+  {"folder":"winter_summer","slug":"winter-summer","contentKey":"winterSummer","type":"residential","category":"apartment"}
+]

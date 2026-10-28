@@ -20,7 +20,7 @@ type ProjectCardProps = {
 export async function ProjectCard({
   project,
   index,
-  href,
+  href = `/gallery/${project.slug}`,
   compact = false,
   imageSizes = '(max-width: 32.5rem) 90vw, (max-width: 50rem) 45vw, 30vw',
   favoriteAction,
@@ -37,6 +37,7 @@ export async function ProjectCard({
         alt={project.imageAlt}
         fill
         sizes={imageSizes}
+        quality={100}
         loading="lazy"
       />
       {index !== undefined && <span className={styles.index} aria-hidden="true">{String(index).padStart(2, '0')}</span>}
@@ -65,7 +66,7 @@ export async function ProjectCard({
   return (
     <article className={`${styles.card} ${compact ? styles.compact : ''}`} data-project-id={project.id}>
       <div className={styles.imageWrap}>
-        {/* Ссылки появятся при передаче href после создания страницы кейса. Пока здесь обычная разметка. */}
+        {/* По умолчанию открываем кейс по slug. href позволяет переиспользовать карточку с другим маршрутом. */}
         {href ? (
           <Link className={styles.cover} href={href} aria-label={t('openProject', {name: project.name})}>{cover}</Link>
         ) : (

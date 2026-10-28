@@ -4,6 +4,7 @@
 | --- | --- |
 | [ArrowUpRight.tsx](ArrowUpRight.tsx) | Стрелка вверх-вправо |
 | [ArrowDown.tsx](ArrowDown.tsx) | Стрелка вниз |
+| [ArrowHorizontal.tsx](ArrowHorizontal.tsx) | Прямая стрелка; `direction`: `left` или `right` |
 | [Heart.tsx](Heart.tsx) | Контур сердца |
 
 Компоненты принимают `className`. Размер и цвет задаёт SCSS вызывающего элемента:

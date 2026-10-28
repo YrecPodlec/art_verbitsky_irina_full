@@ -7,7 +7,9 @@
 слои затемнения, заголовок, кнопку и декоративную надпись 3D.
 Тексты — в `messages.showroomTeaser`.
 
-Фото импортируется из `public/interior/interior-evening.png`.
+Фон — одна обложка Майами из MongoDB через `entities/project/ui/ProjectCoverImage`.
+Используется актуальный `coverMediaId`, alt из `messages.projects.miami.media`.
+Загрузка lazy; на первых экранах тот же компонент использует preload.
 Кадрирование, затемнение, композиция и watermark меняются в
 [ui/ShowroomTeaser.module.scss](ui/ShowroomTeaser.module.scss).
 Общая верхняя строка и заголовок — из `shared/UI/section`,

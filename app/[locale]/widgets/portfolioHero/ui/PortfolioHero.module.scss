@@ -1,0 +1,11 @@
+.hero { position: relative; isolation: isolate; overflow: hidden; padding: 3rem var(--page-gutter) 4rem; color: var(--color-paper); background: var(--color-forest-deep); font-family: var(--font-body); }
+.image { object-fit: cover; object-position: center 52%; z-index: -2; }
+.shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #02130ef0 0%, #02130eb3 48%, #02130e38 100%), linear-gradient(0deg, #061e18d9, transparent 60%); }
+.content { position: relative; max-width: 64rem; }
+.eyebrow { display: flex; align-items: center; gap: .75rem; margin-top: 3rem; color: var(--color-accent-soft); font-size: .75rem; letter-spacing: .2em; line-height: 1.6; text-transform: uppercase; }
+.content h1 { margin-top: 1.5rem; max-width: 56rem; font: 400 clamp(3rem, 6vw, 6rem)/1.04 var(--font-display); letter-spacing: -.04em; overflow-wrap: anywhere; }
+.content h1 em { color: var(--color-accent-soft); font-style: normal; }
+.description { margin-top: 1.5rem; max-width: 32rem; color: var(--color-text-soft); font-size: 1rem; line-height: 1.8; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; margin-top: 2rem; }
+.signature { display: block; margin-top: 3rem; color: var(--color-text-muted); font-size: .75rem; line-height: 1.6; letter-spacing: .2em; }
+@media (max-width: 48rem) { .hero { padding-block: 2rem 3rem; } .eyebrow { margin-top: 2rem; } .shade { background: linear-gradient(90deg, #02130ef0, #02130e80); } .signature { margin-top: 2rem; letter-spacing: .12em; } }

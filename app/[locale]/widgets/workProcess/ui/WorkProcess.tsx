@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
+import furniturePlan from '@/public/plan.png';
 import {ActionLink} from '@/app/[locale]/shared/UI/actionLink';
 import {AccordionItem} from '@/app/[locale]/shared/UI/accordion/AccordionItem';
-import {FloorPlan} from '@/app/[locale]/shared/UI/floorPlan/FloorPlan';
 import {Section, SectionTitle, FinePrint} from '@/app/[locale]/shared/UI/section';
 import styles from './WorkProcess.module.scss';
 
@@ -15,7 +16,11 @@ export async function WorkProcess() {
       <div className={styles.intro}>
         <SectionTitle id="process-title">{t.rich('title', {br: () => <br />, accent: (text) => <em>{text}</em>})}</SectionTitle>
         <p>{t.rich('description', {br: () => <br />})}</p>
-        <div className={styles.plan}><FloorPlan caption={t('planCaption')} /></div>
+        {/* Исходный PNG без сжатия Next: только картинка, без открытия по клику. */}
+        <div className={styles.plan}>
+          <Image className={styles.planImage} src={furniturePlan} alt={t('planAlt')}
+            unoptimized loading="lazy" data-work-plan="true" />
+        </div>
         <ActionLink className={styles.action} href="#contacts">{t('action')}</ActionLink>
       </div>
       <div>{steps.map((id, index) => <AccordionItem key={id} title={t(`steps.${id}.name`)} index={String(index + 1).padStart(2, '0')} defaultOpen={index === 0}>

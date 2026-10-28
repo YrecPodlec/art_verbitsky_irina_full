@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>Visual study for the Art section, not an original artwork</title>
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#e9dcca"/><stop offset="1" stop-color="#cdbfa6"/></linearGradient>
+    <linearGradient id="earth" x2=".8" y2="1"><stop stop-color="#b57254"/><stop offset="1" stop-color="#83462f"/></linearGradient>
+    <linearGradient id="olive" x2=".4" y2="1"><stop stop-color="#777c53"/><stop offset="1" stop-color="#3a4835"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <g filter="url(#grain)">
+    <path fill="url(#paper)" d="M0 0h1200v800H0z"/>
+    <path fill="#e9e2d1" d="M0 40h380v760H0z"/>
+    <path fill="url(#earth)" d="M406-20h230c170 0 232 117 214 262-17 137-96 219-205 278-117 65-154 165-141 300H276c-8-174 40-281 155-371 101-78 149-153 141-236-7-74-74-112-166-110z"/>
+    <path fill="url(#olive)" d="M993-20h207v820H662c-12-139 75-217 183-285 124-78 190-163 177-283-13-119-82-156-29-252z"/>
+    <path fill="#caab79" d="M858 110c91 0 165 75 165 168s-74 168-165 168-165-75-165-168 74-168 165-168z"/>
+    <path fill="#e3cfaf" d="M928 147c52 32 82 94 74 155-9 62-56 110-112 127-28-53-48-110-37-168 8-44 35-81 75-114z"/>
+    <path d="M143 800c-12-212 17-327 95-434 79-108 90-228 62-386" fill="none" stroke="#514637" stroke-width="3"/>
+    <path d="M169 800c-9-198 19-311 88-414 91-136 107-253 80-406M187 800c8-187 33-284 98-378 96-137 116-281 92-442" fill="none" stroke="#514637" stroke-width="1.5"/>
+    <path d="M-20 602c256-42 453-19 609 51s353 86 631 18" fill="none" stroke="#e8dbc3" stroke-width="2" opacity=".55"/>
+    <path d="M1074 0v800" stroke="#d1c29f" stroke-width="2" opacity=".5"/>
+    <path d="M0 724h1200" stroke="#af9475" stroke-width="1" opacity=".5"/>
+  </g>
+</svg>

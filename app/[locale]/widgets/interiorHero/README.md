@@ -1,8 +1,13 @@
 # Приветственный блок Interior Design
 
 `ui/InteriorHero.tsx` — серверный компонент первого экрана из `maket/index.html`.
-`model/actions.ts` хранит порядок ссылок и маршруты, а все тексты, включая метаданные
-и описание изображения, находятся в `messages/*.json` в разделе `interiorHero`.
+`model/actions.ts` хранит порядок ссылок и маршруты, а все тексты, включая метаданные,
+находятся в `messages/*.json` в разделе `interiorHero`.
+
+Фон первого экрана — локальный `public/interior/interior-evening.png`.
+Он не зависит от MongoDB, использует Next Image с preload и `sizes="100vw"`.
+Alt — `interiorHero.imageAlt`. Стили фона и затемнение для читаемости текста —
+в `InteriorHero.module.scss`. Gallery и нижнее превью шоурума сохраняют обложку Майами.
 
 Теги `<br></br>` задают переносы строк, `<accent>...</accent>` выделяет часть заголовка.
 При добавлении языка переводится словарь, а не компоненты.

@@ -9,6 +9,8 @@
 | [languageSwitcher](languageSwitcher/README.md) | Выбор языка и раскрытие списка языков | Навбар |
 | [sectionNavigation](sectionNavigation/README.md) | Якоря секций, подсветка текущего блока, прогресс, возврат наверх | Страница интерьера |
 | [favoriteProject](favoriteProject/README.md) | Заготовка добавления проекта в избранное | Карточки проектов |
+| [filterProjects](filterProjects/README.md) | Поиск и URL-фильтры серверного каталога | Галерея |
+| [viewProjectMedia](viewProjectMedia/README.md) | Сетка и увеличенный просмотр изображений | Кейсы проектов |
 | [profileButton](profileButton/README.md) | Заготовка входа в профиль | Навбар и футер |
 | [mainCardFeature](mainCardFeature/README.md) | Список переходов исходной главной страницы | `app/[locale]/page.tsx` |
 

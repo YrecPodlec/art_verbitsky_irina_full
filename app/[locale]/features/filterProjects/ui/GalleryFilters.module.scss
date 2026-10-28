@@ -1,0 +1,16 @@
+.toolbar { padding-bottom: 1.5rem; border-bottom: .0625rem solid var(--color-border); }
+.tabs { display: flex; flex-wrap: wrap; gap: 2rem; }
+.tabs button { padding: .75rem 0; background: none; border: 0; border-bottom: .125rem solid transparent; color: var(--color-text-secondary); font: 1rem/1.5 var(--font-body); cursor: pointer; }
+.tabs button[aria-pressed=true] { color: var(--color-accent-soft); border-color: var(--color-accent-soft); }
+.tabs button:hover { color: var(--color-paper); }
+.controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 1.5rem; margin-top: 2rem; }
+.controls label { display: flex; flex-direction: column; gap: .5rem; flex: 1; min-width: 0; }
+.controls label > span { font-size: .75rem; color: var(--color-text-subtle); }
+.controls select, .controls input { width: 100%; min-width: 0; padding: .75rem 0; border: 0; border-radius: 0; border-bottom: .0625rem solid var(--color-accent-muted); color: var(--color-paper); background: transparent; font: 1rem/1.5 var(--font-body); color-scheme: dark; }
+.controls option { background: var(--color-forest-deep); }
+.controls input:focus-visible, .controls select:focus-visible { outline: .125rem solid var(--color-accent-soft); outline-offset: .25rem; }
+.search { display: flex; flex: 2; align-items: flex-end; gap: 1rem; min-width: 16rem; }
+.search button { margin-bottom: .5rem; }
+.status { min-height: 1.25rem; margin-top: .75rem; color: var(--color-text-subtle); font-size: .75rem; }
+@media (max-width: 48rem) { .controls { display: grid; grid-template-columns: 1fr 1fr; } .search { grid-column: 1 / -1; min-width: 0; } .tabs { gap: 1.25rem; } }
+@media (max-width: 24rem) { .tabs button { font-size: .75rem; } .controls { grid-template-columns: 1fr; } }

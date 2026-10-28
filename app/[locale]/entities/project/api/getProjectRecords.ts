@@ -1,6 +1,6 @@
 import 'server-only';
 import {connection} from 'next/server';
-import {prisma} from '@/app/[locale]/shared/lib/db/prisma';
+import {findOrderedProjects} from './findOrderedProjects';
 
 export type ProjectQuery = {
   featured?: boolean;
@@ -16,9 +16,7 @@ export async function getProjectRecords({featured, limit}: ProjectQuery = {}) {
   // Читаем актуальную БД при запросе страницы, а не сохраняем подборку на этапе сборки.
   // Это серверный рендеринг: содержимое остаётся доступным поисковым системам.
   await connection();
-  return prisma.project.findMany({
-    where: {publicationStatus: 'published', ...(featured === undefined ? {} : {featured})},
-    orderBy: [{createdAt: 'desc'}, {id: 'asc'}],
-    ...(limit === undefined ? {} : {take: limit}),
-  });
+  return findOrderedProjects({
+    publicationStatus: 'published', ...(featured === undefined ? {} : {featured}),
+  }, 0, limit);
 }

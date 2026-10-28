@@ -1,0 +1,23 @@
+.card { min-width: 0; }
+.link { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; min-height: 27rem; padding: 2rem; background: var(--color-forest-deep); color: var(--color-paper); overflow: hidden; }
+.image { object-fit: cover; object-position: 60% center; z-index: -3; transition: transform 800ms var(--motion-ease); }
+.shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(180deg, #05140e66, transparent 30%, #05140eb8 75%, #05140ef0); }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-size: .75rem; line-height: 1.7; letter-spacing: .08em; }
+.top > span:first-child { padding: .5rem .75rem; border: .0625rem solid #f4f1e860; flex: none; }
+.top > span:last-child { text-align: right; max-width: 12rem; }
+.bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-top: 6rem; }
+.bottom > div { min-width: 0; }
+.kicker { font-size: .75rem; line-height: 1.7; letter-spacing: .08em; color: var(--color-text-soft); }
+.bottom h3 { margin-top: .75rem; font: 400 clamp(2rem, 2.75vw, 3rem)/1.2 var(--font-display); overflow-wrap: anywhere; }
+.description { margin-top: 1rem; font-size: 1rem; line-height: 1.7; color: var(--color-text-soft); }
+.roundArrow { display: grid; place-items: center; width: 3.5rem; height: 3.5rem; flex: none; border: .0625rem solid #f4f1e880; border-radius: 50%; transition: background-color var(--motion-standard) var(--motion-ease); }
+.roundArrow svg { width: 1.5rem; height: 1.5rem; transition: transform var(--motion-standard) var(--motion-ease); }
+.action { margin-top: 1.5rem; padding-top: 1rem; border-top: .0625rem solid #f4f1e840; font-size: 1rem; line-height: 1.6; }
+.note { padding: .75rem .5rem 0; color: var(--color-text-secondary); font-size: .75rem; line-height: 1.8; }
+.link:hover .image, .link:focus-visible .image { transform: scale(1.035); }
+.link:hover .roundArrow, .link:focus-visible .roundArrow { background: #296d484d; }
+.link:hover .roundArrow svg, .link:focus-visible .roundArrow svg { transform: translate(.25rem, -.25rem); }
+@media (max-width: 75rem) { .link { padding: 1.5rem; } .top > span:last-child { display: none; } }
+@media (max-width: 40rem) { .link { min-height: 25rem; padding: 1.5rem; } .bottom { gap: 1rem; margin-top: 4rem; } .roundArrow { width: 3rem; height: 3rem; } }
+@media (max-width: 23rem) { .link { padding: 1rem; } .bottom { gap: .75rem; } .roundArrow { width: 2.5rem; height: 2.5rem; } }
+@media (prefers-reduced-motion: reduce) { .image, .roundArrow, .roundArrow svg { transition: none; } }

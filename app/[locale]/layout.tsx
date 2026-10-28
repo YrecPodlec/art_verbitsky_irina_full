@@ -4,7 +4,6 @@ import {hasLocale, NextIntlClientProvider} from "next-intl";
 import {getMessages, setRequestLocale} from "next-intl/server";
 import {notFound} from "next/navigation";
 import {routing} from "@/i18n/routing";
-import {SiteHeader} from './widgets';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
@@ -31,7 +30,6 @@ export default async function RootLayout({
       <body>
         {/* Клиентской шапке нужен только её словарь; серверные блоки переводятся через getTranslations. */}
         <NextIntlClientProvider messages={{siteHeader: messages.siteHeader}}>
-          <SiteHeader />
           {children}
         </NextIntlClientProvider>
       </body>

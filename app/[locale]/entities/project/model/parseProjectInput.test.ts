@@ -5,6 +5,11 @@ import {parseProjectInput, ProjectInputError} from './parseProjectInput';
 const draft = {slug: 'test-project', contentKey: 'testProject', type: 'residential', category: 'house'};
 const image = {id: '123-cover', contentKey: 'cover', category: 'visualization', url: '/projects/test/cover.webp', width: 2028, height: 1525};
 
+test('Офис допустим только для коммерческого проекта', () => {
+  assert.equal(parseProjectInput({...draft, type: 'commercial', category: 'office'}).category, 'office');
+  assert.throws(() => parseProjectInput({...draft, type: 'residential', category: 'office'}), ProjectInputError);
+});
+
 test('Минимальная запись — черновик без изображений, текстов и клиентского ID', () => {
   const result = parseProjectInput({...draft, id: 'forged', name: 'Do not store', createdAt: 'forged'});
   assert.equal(result.publicationStatus, 'draft');

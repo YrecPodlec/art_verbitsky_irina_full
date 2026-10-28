@@ -1,6 +1,8 @@
 # MainCardFeature — карточки исходной главной
 
-Это ранний компонент главной `app/[locale]/page.tsx`, отдельной от `/interior`.
+Это **неиспользуемый ранний компонент** прежней главной, оставленный для истории.
+Новая главная — `(home)/page.tsx`; карточки — `entities/direction`, список —
+`widgets/homeDirections`. Для изменений открывай [карту главной](../../(home)/README.md).
 Файлы пока лежат прямо в папке без `ui` и `model`.
 
 [mainCardFeature.tsx](mainCardFeature.tsx) содержит массив карточек:

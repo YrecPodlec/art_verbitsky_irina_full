@@ -7,7 +7,7 @@ import {WorkProcess} from '@/app/[locale]/widgets/workProcess';
 import {DesignerAbout} from '@/app/[locale]/widgets/designerAbout';
 import {ShowroomTeaser} from '@/app/[locale]/widgets/showroomTeaser';
 import {InteriorContact} from '@/app/[locale]/widgets/interiorContact';
-import {InteriorFooter} from '@/app/[locale]/widgets/interiorFooter';
+import {SiteFooter} from '@/app/[locale]/widgets/siteFooter';
 import {InquiryProvider} from '@/app/[locale]/features/projectInquiry';
 import {SectionNavigation} from '@/app/[locale]/features/sectionNavigation';
 import {Breadcrumbs} from '@/app/[locale]/shared/UI/breadcrumbs';
@@ -44,7 +44,7 @@ export default async function InteriorPage({params}: InteriorPageProps) {
         <InteriorContact />
       </main>
       <SectionNavigation sections={sections} label={t('label')} backToTop={t('backToTop')} />
-      <InteriorFooter />
+      <SiteFooter />
     </InquiryProvider>
   );
 }

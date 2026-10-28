@@ -6,12 +6,13 @@
 | Папка | Адрес | Состояние |
 | --- | --- | --- |
 | [interior](interior/README.md) | `/ru/interior`, `/en/interior` | Полная страница дизайна интерьера |
-| [gallery/page.tsx](gallery/page.tsx) | `/ru/gallery` | Заглушка |
+| [gallery](gallery/README.md) | `/ru/gallery`, `/en/gallery` | Серверный каталог с фильтрами и пагинацией |
+| [gallery/[slug]/page.tsx](gallery/[slug]/page.tsx) | `/ru/gallery/miami-house` | Подробный кейс с материалами из БД |
 | [articles/page.tsx](articles/page.tsx) | `/ru/articles` | Заглушка |
 | [showroom/page.tsx](showroom/page.tsx) | `/ru/showroom` | Заглушка |
 | [admin/projects/page.tsx](admin/projects/page.tsx) | `/ru/admin/projects` | Форма добавления проекта; POST защищён серверным ключом |
 
-У трёх заглушек одна схема: подготовка хлебных крошек и `SectionPlaceholder`.
+У оставшихся заглушек одна схема: подготовка хлебных крошек и `SectionPlaceholder`.
 Разметка заглушки описана в [каталоге UI](../shared/UI/README.md).
 
 ## Добавить страницу
@@ -25,4 +26,5 @@
 
 Хлебные крошки не создают маршрут автоматически. Подробности —
 в [документации навигации](../shared/lib/navigation/README.md).
-Шапка находится в родительском layout; футер пока подключается только на странице интерьера.
+Шапка находится в родительском layout. Общий футер подключается на interior
+и в layout галереи (включая вложенные кейсы).

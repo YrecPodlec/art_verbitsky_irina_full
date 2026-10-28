@@ -1,5 +1,4 @@
 .section { position: relative; isolation: isolate; padding: 3.5rem var(--page-gutter) 4rem; min-height: 45rem; overflow: hidden; border-block: .0625rem solid var(--color-border); color: var(--color-paper); font-family: var(--font-body); }
-.image { object-fit: cover; object-position: 73% 50%; z-index: -3; }
 .shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, #061f19f5, #082b22b3 40%, #082b2210), linear-gradient(0deg, #061f1999, transparent); }
 .copy { position: relative; z-index: 1; margin-top: 3.75rem; > h2 { margin: 1.5rem 0; } > p:nth-of-type(2) { color: #d2dbca; font-size: 1rem; line-height: 1.6; } }
 .action { margin-top: 2rem; }

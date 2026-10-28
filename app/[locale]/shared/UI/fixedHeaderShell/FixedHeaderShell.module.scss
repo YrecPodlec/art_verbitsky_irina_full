@@ -1,0 +1,3 @@
+.shell { --header-fallback: 6.5rem; padding-top: var(--fixed-header-height, var(--header-fallback)); min-height: 100svh; }
+@media (max-width: 72rem) { .shell { --header-fallback: 5.5rem; } }
+@media (max-width: 32.5rem) { .shell { --header-fallback: 4.75rem; } }

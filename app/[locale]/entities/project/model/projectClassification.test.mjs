@@ -34,7 +34,7 @@ test('названия всех типов, категорий и ошибка �
 // Проверяем всю матрицу, а не только одно удачное и одно ошибочное сочетание.
 const validCategories = {
   residential: ['house', 'apartment'],
-  commercial: ['hotel', 'cafe'],
+  commercial: ['hotel', 'cafe', 'office'],
 };
 
 for (const type of Object.values(ProjectType)) {
